@@ -1,0 +1,24 @@
+.md-header {
+  background-color: #800020 !important; /* Бургунди */
+  color: #FFFFFF !important; /* Белый текст */
+}
+
+.md-tabs {
+  background-color: #800020 !important; /* Бургунди */
+}
+
+.md-tabs__link {
+  color: #FFFFFF !important; /* Белый текст */
+  border-bottom: 2px solid transparent !important;
+}
+
+.md-tabs__link--active {
+  color: #FFFFFF !important;
+  background-color: #600018 !important; /* Темнее бургунди */
+  border-bottom: 3px solid #D4AF37 !important; /* Золотая линия для активной вкладки */
+}
+
+.md-footer {
+  background-color: #800020 !important; /* Бургунди */
+  color: #FFFFFF !important; /* Белый текст */
+}
