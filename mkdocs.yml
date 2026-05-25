@@ -1,10 +1,10 @@
-site_name: Iuliia Belskaia portfolio # Название сайта
+site_name: Портфолио Бельской Юлии # Название сайта
 site_description: Профессиональное портфолио # Описание сайта, добавляется в meta-теги
 theme: # Тема сайта, информация о ее параметрах
   name: material # Название темы
   logo: images/logo.svg # Ссылка на логотип сайта, логотип добавляется в папку `docs/images`
   font:
-    text: Roboto # Шрифт текста
+    text: Roboto Mono # Шрифт текста
     code: Roboto Mono # Шрифт для текста кода
   language: ru # Язык
   palette: # Настройки светлой и тёмной тем
@@ -13,8 +13,8 @@ theme: # Тема сайта, информация о ее параметрах
       toggle:
         icon: material/weather-sunny # Иконка для активации светлой темы
         name: Выключить солнышко # Всплывающий текст-подсказка
-      primary: purple # Основной цвет
-      accent: white # Акцентный цвет
+      primary: deep purple   # Основной цвет
+      accent: white    # Акцентный цвет
       # вы можете использовать любой цвет из списка: 
       # red; pink; purple; deep purple; indigo; blue; light blue; cyan; teal; 
       # green; light green; lime; yellow; amber; orange; deep orange; brown; 
@@ -25,8 +25,12 @@ theme: # Тема сайта, информация о ее параметрах
       toggle:
         icon: material/weather-night
         name: Позвать солнышко
-      primary: deep purple
-      accent: blue
+      primary: deep purple  # Основной цвет
+      accent: white # Акцентный цвет
+      # вы можете использовать любой цвет из списка: 
+      # red; pink; purple; deep purple; indigo; blue; light blue; cyan; teal; 
+      # green; light green; lime; yellow; amber; orange; deep orange; brown; 
+      # grey; blue grey; black; white
   features: # настройки функциональностей темы
     # - navigation.sections # Добавление разделов верхнего уровня в боковом меню, отключение спойлеров в боковом меню
     - navigation.path # Хлебные крошки
@@ -35,6 +39,9 @@ theme: # Тема сайта, информация о ее параметрах
     - navigation.tabs.sticky # Фиксация верхнего меню
     - # navigation.expand # Разворачивает спойлеры в левом меню по умолчанию
     - # toc.integrate # Фиксирует оглавление страницы в левом меню
+    - navigation.top  # перемещает TOC наверх/вправо
+    - navigation.tabs # вкладки навигации
+    - navigation.sections # секции в навигации
     - navigation.instant # Функция быстрой загрузки страниц
     - navigation.top # Добавляет кнопку «к началу» для быстрой обратной прокрутки страницы
     - search.suggest # Подсказки при вводе поискового запроса
@@ -45,6 +52,13 @@ nav: # Структура сайта
 - Главная страница: index.md
 - Инструкции:
   - Смена аватарки в Telegram: instructions/page1.md
+  - Сценарий «Редактирование заметки»: instructions/page2.md
+- FAQ:
+  - Не активна кнопка Уравнение: FAQ/page3.md
+  - Нумерация таблиц и рисунков с заданного номера: FAQ/page4.md
+
+extra_css:
+  - stylesheets/extra.css
 
 markdown_extensions: # Расширения markdown
   - admonition # Поддержка информационных панелей (сообщений типа «Внимание», «Совет», «Примечание», etc.)
@@ -61,3 +75,9 @@ markdown_extensions: # Расширения markdown
 
 plugins:
   - search # Плагин для подключения поиска на портале
+  - tags:
+      tags_allowed:
+      - manual
+      - markdown
+      - word
+      - help
