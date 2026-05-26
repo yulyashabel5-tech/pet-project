@@ -1,17 +1,33 @@
-# Welcome to MkDocs
+# Моё портфолио
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Добро пожаловать!
 
-## Commands
+## Что здесь есть
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+* **Инструкции** — примеры инструкций.
+* **FAQ** — ответы на часто задаваемые вопросы.
+* **Контакты** — как со мной связаться.
 
-## Project layout
+## Быстрый старт
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+* `mkdocs serve` — запустить локальный сервер для просмотра.
+* `mkdocs build` — собрать финальную версию сайта.
+* `mkdocs gh-deploy` — развернуть на GitHub Pages.
+
+## Структура проекта
+
+    Pet_project/         # Корневая папка проекта
+    ├── mkdocs.yml       # Конфигурация MkDocs
+    └── docs/            # Все Markdown‑файлы и ресурсы
+        ├── index.md     # Главная страница
+        ├── instructions.md   # Инструкции
+        │   ├── page1.md
+        │   └── page2.md
+        ├── FAQ/    # Вопросы/Ответы
+        │   ├── page3.md
+        │   └── page4.md
+        └── images/      # Изображения
+            ├── logo.svg
+            ├── FAQ1.png
+            ├── FAQ2.png
+            └── FAQ3.png
