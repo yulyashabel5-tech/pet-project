@@ -55,6 +55,7 @@ nav: # Структура сайта
 - Примеры документации: 
   - Сценарий «Редактирование заметки»: examples/page2.md
   - API Specification Swagger: api/swagger-api.md
+  - API Specification Redoc: api/redoc-api.md
 - FAQ:
   - Не активна кнопка Уравнение: FAQ/page3.md
   - Нумерация таблиц и рисунков с заданного номера: FAQ/page4.md
@@ -85,4 +86,6 @@ plugins:
       - help
   - glightbox
   - swagger-ui-tag
-
+  - redoc-tag
+  - plantuml:
+      puml_url: https://www.plantuml.com/plantuml/
