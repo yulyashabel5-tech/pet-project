@@ -1,24 +1,83 @@
-.md-header {
-  background-color: #800020 !important; /* Бургунди */
-  color: #FFFFFF !important; /* Белый текст */
+/* Настройки светлой схемы */
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #800020; /*Основной цвет*/
+  --md-accent-fg-color: #490113; /*Акцентный цвет*/
+  --md-typeset-a-color: #7e0422; /*Цвет ссылок*/
+  --md-default-bg-color: #fafafabb; /*Фоновый цвет*/
+  --md-default-fg-color: #353535; /*Основной цвет текста (абзацы, списки, подзаголовки, nav и toc)*/
+  --md-code-bg-color: #f7ecec; /*Цвет фона блока кода*/
+  --md-code-fg-color: #5c5b5b; /*Цвет текста в блоке кода*/
+  --md-default-fg-color--light: #808289; /*Цвет h1 и заголовков блоков toc и nav*/
+  --md-footer-bg-color: #800020; /*Цвет футера*/
 }
 
-.md-tabs {
-  background-color: #800020 !important; /* Бургунди */
+/* Настройки тёмной схемы */
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #800020; /*Основной цвет*/
+  --md-accent-fg-color: #ffffff; /*Акцентный цвет*/
+  --md-typeset-a-color: #cf0000; /*Цвет ссылок*/
+  --md-default-bg-color: #1E2129; /*Фоновый цвет*/
+  --md-default-fg-color: #acaeb4; /*Основной цвет текста (абзацы, списки, подзаголовки, nav и toc)*/
+  --md-code-bg-color: #272A35; /*Цвет фона блока кода*/
+  --md-code-fg-color: #9B9EA8; /*Цвет текста в блоке кода*/
+  --md-default-fg-color--light: #808289; /*Цвет h1 и заголовков блоков toc и nav*/
+  --md-footer-bg-color: #800020; /*Цвет футера*/
 }
 
-.md-tabs__link {
-  color: #FFFFFF !important; /* Белый текст */
-  border-bottom: 2px solid transparent !important;
+/*Параметры текста статей*/
+.md-typeset {
+    font-family: 'Roboto Mono';
+    font-weight: 400;
+    font-size: 16px;
+}
+/*Параметры текста nav и toc*/
+.md-nav {
+    font-family: 'Roboto Mono';
+    font-weight: 400;
+    font-size: 16px;
 }
 
-.md-tabs__link--active {
-  color: #FFFFFF !important;
-  background-color: #600018 !important; /* Темнее бургунди */
-  border-bottom: 3px solid #D4AF37 !important; /* Золотая линия для активной вкладки */
+.md-content h1, .md-content h2, .md-content h3, .md-content h4 {
+    font-family: 'Roboto Mono';
+    font-weight: 600;
 }
 
-.md-footer {
-  background-color: #800020 !important; /* Бургунди */
-  color: #FFFFFF !important; /* Белый текст */
+.md-content h1 {
+    font-size: 30px;
+}
+
+.md-content h2 {
+    font-size: 24px;
+}
+
+.md-content h3 {
+    font-size: 21px;
+}
+
+.md-content h4 {
+    font-size: 18px;
+}
+
+
+/* Цвет заголовков для светлой темы (default) */
+[data-md-color-scheme="default"] h1,
+[data-md-color-scheme="default"] h2,
+[data-md-color-scheme="default"] h3,
+[data-md-color-scheme="default"] h4,
+[data-md-color-scheme="default"] h5,
+[data-md-color-scheme="default"] h6 {
+  color: #4b5563;
+}
+
+/* Цвет заголовков для тёмной темы (slate) */
+[data-md-color-scheme="slate"] h1,
+[data-md-color-scheme="slate"] h2,
+[data-md-color-scheme="slate"] h3,
+[data-md-color-scheme="slate"] h4,
+[data-md-color-scheme="slate"] h5,
+[data-md-color-scheme="slate"] h6 {
+  color: #808289;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); /* тень для глубины */
 }
