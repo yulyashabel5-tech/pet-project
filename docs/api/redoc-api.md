@@ -1,6 +1,9 @@
 ---
 hide:
  - toc
+ - navigation
+tags:
+  - API
 ---
 
 # API Specification Redoc

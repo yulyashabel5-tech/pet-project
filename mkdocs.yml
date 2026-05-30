@@ -13,7 +13,7 @@ theme: # Тема сайта, информация о ее параметрах
       toggle:
         icon: material/weather-sunny # Иконка для активации светлой темы
         name: Выключить солнышко # Всплывающий текст-подсказка
-      primary: deep purple   # Основной цвет
+      primary: red   # Основной цвет
       accent: white    # Акцентный цвет
       # вы можете использовать любой цвет из списка: 
       # red; pink; purple; deep purple; indigo; blue; light blue; cyan; teal; 
@@ -25,15 +25,15 @@ theme: # Тема сайта, информация о ее параметрах
       toggle:
         icon: material/weather-night
         name: Позвать солнышко
-      primary: deep purple  # Основной цвет
+      primary: red  # Основной цвет
       accent: white # Акцентный цвет
       # вы можете использовать любой цвет из списка: 
       # red; pink; purple; deep purple; indigo; blue; light blue; cyan; teal; 
       # green; light green; lime; yellow; amber; orange; deep orange; brown; 
       # grey; blue grey; black; white
   features: # настройки функциональностей темы
-    # - navigation.sections # Добавление разделов верхнего уровня в боковом меню, отключение спойлеров в боковом меню
-    - navigation.path # Хлебные крошки
+    - navigation.sections # Добавление разделов верхнего уровня в боковом меню, отключение спойлеров в боковом меню
+ #  - navigation.path # Хлебные крошки
     - navigation.indexes # Позволяет создавать корневые страницы разделов меню. Корневая страница должна лежать в папке раздела и называться index.md. Пример использования корневых страниц приведен ниже в настройках nav
     - navigation.tabs # Верхнее меню
     - navigation.tabs.sticky # Фиксация верхнего меню
@@ -84,6 +84,7 @@ plugins:
       - markdown
       - word
       - help
+      - API
   - glightbox
   - swagger-ui-tag
   - redoc-tag
