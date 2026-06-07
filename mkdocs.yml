@@ -75,6 +75,7 @@ markdown_extensions: # Расширения markdown
   - pymdownx.highlight: # Подсветка синтаксиса в блоках кода
       anchor_linenums: true
   - pymdownx.superfences # Поддержка вложенных блоков кода
+  - pymdownx.snippets
 
 plugins:
   - search # Плагин для подключения поиска на портале
