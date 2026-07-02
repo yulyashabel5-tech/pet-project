@@ -50,6 +50,9 @@ theme: # Тема сайта, информация о ее параметрах
 
 nav: # Структура сайта
 - Главная страница: index.md
+- Инструменты:
+  - Markdown: tools/markdown.md
+  - Git: tools/git.md
 - Инструкции:
   - Смена аватарки в Telegram: instructions/page1.md
 - Примеры документации: 
@@ -76,6 +79,7 @@ markdown_extensions: # Расширения markdown
       anchor_linenums: true
   - pymdownx.superfences # Поддержка вложенных блоков кода
   - pymdownx.snippets
+  - pymdownx.tabbed
 
 plugins:
   - search # Плагин для подключения поиска на портале
