@@ -53,6 +53,7 @@ nav: # Структура сайта
 - Инструменты:
   - Markdown: tools/markdown.md
   - Git: tools/git.md
+  - PlantUML: tools/plantuml.md
 - Инструкции:
   - Смена аватарки в Telegram: instructions/page1.md
 - Примеры документации: 
