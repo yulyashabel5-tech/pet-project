@@ -62,6 +62,9 @@
 
 ```puml
 @startuml
+title Пользовательский сценарий «Редактирование заметки»
+skinparam sequenceMessageAlign center
+
 actor Пользователь as user
 participant Приложение as front
 participant Бэк as back
@@ -90,7 +93,7 @@ end alt
 ```
 
 ??? note "Код диаграммы"
-    ```
+    ```puml
     @startuml
     actor Пользователь
     participant Приложение
