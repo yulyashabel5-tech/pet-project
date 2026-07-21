@@ -87,9 +87,11 @@ plugins:
   - tags:
       tags_allowed:
       - manual
+      - plantuml
       - markdown
       - word
       - help
+      - git
       - API
   - glightbox
   - swagger-ui-tag
