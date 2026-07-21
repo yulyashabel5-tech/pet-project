@@ -116,3 +116,8 @@ table td {
 table tr:last-child td {
     border-bottom: none;
 }
+
+/* Второй уровень нумерации */
+.md-typeset ol ol { 
+  list-style-type: lower-alpha; 
+}

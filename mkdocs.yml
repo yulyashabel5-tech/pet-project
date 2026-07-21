@@ -31,6 +31,7 @@ theme: # Тема сайта, информация о ее параметрах
       # red; pink; purple; deep purple; indigo; blue; light blue; cyan; teal; 
       # green; light green; lime; yellow; amber; orange; deep orange; brown; 
       # grey; blue grey; black; white
+  
   features: # настройки функциональностей темы
     - navigation.sections # Добавление разделов верхнего уровня в боковом меню, отключение спойлеров в боковом меню
     - # navigation.path # Хлебные крошки
@@ -52,6 +53,7 @@ nav: # Структура сайта
 - Главная страница: index.md
 - Инструменты:
   - Markdown: tools/markdown.md
+  - MkDocs: tools/mkdocs.md
   - Git: tools/git.md
   - PlantUML: tools/plantuml.md
 - Инструкции:
