@@ -31,27 +31,32 @@ theme: # Тема сайта, информация о ее параметрах
       # red; pink; purple; deep purple; indigo; blue; light blue; cyan; teal; 
       # green; light green; lime; yellow; amber; orange; deep orange; brown; 
       # grey; blue grey; black; white
+  
   features: # настройки функциональностей темы
+    # Навигация
     - navigation.sections # Добавление разделов верхнего уровня в боковом меню, отключение спойлеров в боковом меню
     - # navigation.path # Хлебные крошки
     - navigation.indexes # Позволяет создавать корневые страницы разделов меню. Корневая страница должна лежать в папке раздела и называться index.md. Пример использования корневых страниц приведен ниже в настройках nav
     - navigation.tabs # Верхнее меню
     - navigation.tabs.sticky # Фиксация верхнего меню
-    - # navigation.expand # Разворачивает спойлеры в левом меню по умолчанию
+    - navigation.expand # Разворачивает спойлеры в левом меню по умолчанию
     - # toc.integrate # Фиксирует оглавление страницы в левом меню
-    - navigation.top  # перемещает TOC наверх/вправо
-    - navigation.tabs # вкладки навигации
-    - navigation.sections # секции в навигации
     - navigation.instant # Функция быстрой загрузки страниц
     - navigation.top # Добавляет кнопку «к началу» для быстрой обратной прокрутки страницы
+    - navigation.tags # Добавляет теги в навигацию
+
+    # Поиск
     - search.suggest # Подсказки при вводе поискового запроса
     - search.highlight # Подсветка результатов поиска в тексте страницы
+
+    # Контент
     - content.code.copy # Кнопка копирования в блоке кода
 
 nav: # Структура сайта
 - Главная страница: index.md
 - Инструменты:
   - Markdown: tools/markdown.md
+  - MkDocs: tools/mkdocs.md
   - Git: tools/git.md
   - PlantUML: tools/plantuml.md
 - Инструкции:
@@ -66,6 +71,9 @@ nav: # Структура сайта
 
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/collapsible-toc.js
 
 markdown_extensions: # Расширения markdown
   - admonition # Поддержка информационных панелей (сообщений типа «Внимание», «Совет», «Примечание», etc.)
@@ -92,7 +100,10 @@ plugins:
       - word
       - help
       - git
-      - API
+      - api
+      - mkdocs
+      tags_file: tags.md  # Указывает файл для вывода всех тегов
+      tags_url: /tags/ # Ссылка на страницу, куда ведёт клик по тегу
   - glightbox
   - swagger-ui-tag
   - redoc-tag

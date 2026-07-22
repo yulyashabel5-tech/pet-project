@@ -3,7 +3,7 @@ hide:
  - toc
  - navigation
 tags:
-  - API
+  - api
 ---
 
 # API Specification Redoc

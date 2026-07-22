@@ -2,7 +2,7 @@
 hide:
  - toc
 tags:
-  - API
+  - api
 ---
 
 # API Specification Swagger
