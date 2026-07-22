@@ -121,3 +121,42 @@ table tr:last-child td {
 .md-typeset ol ol { 
   list-style-type: lower-alpha; 
 }
+
+/* Сворачиваемое оглавление (правая панель) */
+
+/* Кнопка-переключатель */
+.toc-toggle {
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 0.3rem;
+  opacity: 0.7;
+  user-select: none;
+}
+
+/* Треугольник в свёрнутом состоянии (вправо) */
+.toc-toggle::after {
+  content: "▸";
+  display: inline-block;
+  font-size: 1.1rem;           /* Увеличенный размер */
+  font-weight: bold;
+  transition: transform 0.2s ease;
+  color: var(--md-default-fg-color--lighter);
+  line-height: 1;
+}
+
+/* Треугольник в развёрнутом состоянии (вниз) */
+.md-nav__item--nested:not(.toc-collapsed) > .md-nav__link .toc-toggle::after {
+  transform: rotate(90deg);
+  color: var(--md-primary-fg-color);
+}
+
+/* Скрываем вложенные пункты у свёрнутого раздела */
+.toc-collapsed > .md-nav {
+  display: none !important;
+}
+
+/* Ховер-эффект */
+.toc-toggle:hover::after {
+  opacity: 1;
+  color: var(--md-accent-fg-color);
+}
