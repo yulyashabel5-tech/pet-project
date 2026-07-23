@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Профессиональное портфолио" name="description"/>
+<link href="../mkdocs/" rel="prev"/>
+<link href="../plantuml/" rel="next"/>
+<link href="../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.7" name="generator"/>
+<title>Git - Портфолио Бельской Юлии</title>
+<link href="../../assets/stylesheets/main.ec1eaa64.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto Mono";--md-code-font:"Roboto Mono"}</style>
+<link href="../../stylesheets/extra.css" rel="stylesheet"/>
+<link href="../../assets/mkdocs_puml/puml.css" rel="stylesheet"/>
+<link href="../../assets/mkdocs_puml/interaction.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+<body data-md-color-accent="white" data-md-color-primary="red" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#git">
+          Перейти к содержанию
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+<nav aria-label="Верхний колонтитул" class="md-header__inner md-grid">
+<a aria-label="Портфолио Бельской Юлии" class="md-header__button md-logo" data-md-component="logo" href="../.." title="Портфолио Бельской Юлии">
+<img alt="logo" src="../../images/logo.svg"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Портфолио Бельской Юлии
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Git
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Выключить солнышко" class="md-option" data-md-color-accent="white" data-md-color-media="" data-md-color-primary="red" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Выключить солнышко">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"></path></svg>
+</label>
+<input aria-label="Позвать солнышко" class="md-option" data-md-color-accent="white" data-md-color-media="" data-md-color-primary="red" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Позвать солнышко">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Поиск" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Поиск" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Поиск" class="md-search__options">
+<button aria-label="Очистить" class="md-search__icon md-icon" tabindex="-1" title="Очистить" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<nav aria-label="Вкладки" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../..">
+        
+  
+  
+    
+  
+  Главная страница
+
+      </a>
+</li>
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href="../markdown/">
+          
+  
+  
+    
+  
+  Инструменты
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../instructions/page1/">
+          
+  
+  
+    
+  
+  Инструкции
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../examples/page2/">
+          
+  
+  
+    
+  
+  Примеры документации
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../FAQ/page3/">
+          
+  
+  
+    
+  
+  FAQ
+
+        </a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Навигация" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Портфолио Бельской Юлии" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="Портфолио Бельской Юлии">
+<img alt="logo" src="../../images/logo.svg"/>
+</a>
+    Портфолио Бельской Юлии
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+<span class="md-ellipsis">
+    
+  
+    Главная страница
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    Инструменты
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Инструменты
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../markdown/">
+<span class="md-ellipsis">
+    
+  
+    Markdown
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../mkdocs/">
+<span class="md-ellipsis">
+    
+  
+    MkDocs
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    
+  
+    Git
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    
+  
+    Git
+  
+
+    
+  </span>
+</a>
+<nav aria-label="Содержание" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#git_1">
+<span class="md-ellipsis">
+      
+        Архитектура Git
+      
+    </span>
+</a>
+<nav aria-label="Архитектура Git" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#-">
+<span class="md-ellipsis">
+      
+        Веб-сервисы для хранения репозиториев
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#git_2">
+<span class="md-ellipsis">
+      
+        Принципы работы Git
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#git_3">
+<span class="md-ellipsis">
+      
+        Основные команды Git
+      
+    </span>
+</a>
+<nav aria-label="Основные команды Git" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+<span class="md-ellipsis">
+      
+        Клонирование репозитория
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      
+        Настройка параметров конфигурации
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      
+        Просмотр текущего состояния репозитория
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+<span class="md-ellipsis">
+      
+        Обновление локального репозитория
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
+<span class="md-ellipsis">
+      
+        Переключение между ветками
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_6">
+<span class="md-ellipsis">
+      
+        Создание новой ветки
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_7">
+<span class="md-ellipsis">
+      
+        Сохранение изменений
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_8">
+<span class="md-ellipsis">
+      
+        Публикация новой ветки
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_9">
+<span class="md-ellipsis">
+      
+        Отправка изменений на сервер
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_10">
+<span class="md-ellipsis">
+      
+        Слияние веток
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_11">
+<span class="md-ellipsis">
+      
+        Просмотр истории изменений
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_12">
+<span class="md-ellipsis">
+      
+        Отмена изменений
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_13">
+<span class="md-ellipsis">
+      
+        Просмотр веток
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_14">
+<span class="md-ellipsis">
+      
+        Удаление веток
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../plantuml/">
+<span class="md-ellipsis">
+    
+  
+    PlantUML
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Инструкции
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Инструкции
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../instructions/page1/">
+<span class="md-ellipsis">
+    
+  
+    Смена аватарки в Telegram
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Примеры документации
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Примеры документации
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../examples/page2/">
+<span class="md-ellipsis">
+    
+  
+    Сценарий «Редактирование заметки»
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../api/swagger-api/">
+<span class="md-ellipsis">
+    
+  
+    API Specification Swagger
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../api/redoc-api/">
+<span class="md-ellipsis">
+    
+  
+    API Specification Redoc
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    FAQ
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../FAQ/page3/">
+<span class="md-ellipsis">
+    
+  
+    Не активна кнопка Уравнение
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../FAQ/page4/">
+<span class="md-ellipsis">
+    
+  
+    Нумерация таблиц и рисунков с заданного номера
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Содержание" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#git_1">
+<span class="md-ellipsis">
+      
+        Архитектура Git
+      
+    </span>
+</a>
+<nav aria-label="Архитектура Git" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#-">
+<span class="md-ellipsis">
+      
+        Веб-сервисы для хранения репозиториев
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#git_2">
+<span class="md-ellipsis">
+      
+        Принципы работы Git
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#git_3">
+<span class="md-ellipsis">
+      
+        Основные команды Git
+      
+    </span>
+</a>
+<nav aria-label="Основные команды Git" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+<span class="md-ellipsis">
+      
+        Клонирование репозитория
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      
+        Настройка параметров конфигурации
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      
+        Просмотр текущего состояния репозитория
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+<span class="md-ellipsis">
+      
+        Обновление локального репозитория
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
+<span class="md-ellipsis">
+      
+        Переключение между ветками
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_6">
+<span class="md-ellipsis">
+      
+        Создание новой ветки
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_7">
+<span class="md-ellipsis">
+      
+        Сохранение изменений
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_8">
+<span class="md-ellipsis">
+      
+        Публикация новой ветки
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_9">
+<span class="md-ellipsis">
+      
+        Отправка изменений на сервер
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_10">
+<span class="md-ellipsis">
+      
+        Слияние веток
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_11">
+<span class="md-ellipsis">
+      
+        Просмотр истории изменений
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_12">
+<span class="md-ellipsis">
+      
+        Отмена изменений
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_13">
+<span class="md-ellipsis">
+      
+        Просмотр веток
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_14">
+<span class="md-ellipsis">
+      
+        Удаление веток
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<nav class="md-tags">
+<a class="md-tag" href="../../tags/#tag:git">git</a>
+<a class="md-tag" href="../../tags/#tag:help">help</a>
+<a class="md-tag" href="../../tags/#tag:manual">manual</a>
+</nav>
+<h1 id="git">Git</h1>
+<p>Git — распределённая система контроля версий. Git хранит все версии файлов, отслеживает изменения и позволяет управлять ими.</p>
+<h2 id="git_1">Архитектура Git</h2>
+<p>Есть один главный (удалённый) репозиторий на сервере и локальные копии у каждого участника. Участники работают в своей копии, периодически синхронизируя её с удалённым репозиторием: забирают обновления или отправляют свои изменения.</p>
+<p><svg style="margin: 0 auto; display: block; max-width: 740px; width: 100%; height: 100%" viewbox="0 0 740 380" xmlns="http://w3.org"><defs><style>.bg-box{fill:none;stroke:var(--md-default-fg-color--light);stroke-width:1;stroke-dasharray:4 4}.rect-center{fill:var(--md-code-bg-color);stroke:var(--md-primary-fg-color);stroke-width:2.5;rx:14px;ry:14px}.rect-dev{fill:var(--md-code-bg-color);stroke:var(--md-accent-fg-color);stroke-width:2;rx:12px;ry:12px}.user-icon{fill:var(--md-accent-fg-color)}.txt-title{fill:var(--md-primary-fg-color);font-family:'Roboto Mono',monospace;font-size:16px;font-weight:bold;text-anchor:middle}.txt-desc{fill:var(--md-default-fg-color);font-family:'Roboto Mono',monospace;font-size:12px;text-anchor:middle}.arrow-sync-primary{stroke:var(--md-primary-fg-color);stroke-width:2;stroke-dasharray:4 4;fill:none}.arrow-head-primary{fill:var(--md-primary-fg-color)}.arrow-sync-accent{stroke:var(--md-accent-fg-color);stroke-width:2;stroke-dasharray:4 4;fill:none}.arrow-head-accent{fill:var(--md-accent-fg-color)}.lbl-sync-primary{fill:var(--md-primary-fg-color);font-family:'Roboto Mono',monospace;font-size:14px;font-weight:900;text-anchor:middle}.lbl-sync-accent{fill:var(--md-accent-fg-color);font-family:'Roboto Mono',monospace;font-size:14px;font-weight:900;text-anchor:middle}</style><marker id="arr-center-accent" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="6" refy="5" viewbox="0 0 10 10"><path class="arrow-head-accent" d="M 0 1.5 L 7 5 L 0 8.5 z"></path></marker><marker id="arr-center-primary" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="6" refy="5" viewbox="0 0 10 10"><path class="arrow-head-primary" d="M 0 1.5 L 7 5 L 0 8.5 z"></path></marker></defs><g id="git-sync-topology-colored-large-icons"><rect class="bg-box" height="350" width="710" x="15" y="15"></rect><rect class="rect-center" height="75" width="200" x="270" y="40"></rect><text class="txt-title" x="370" y="73">Remote Repo</text><text class="txt-desc" x="370" y="95">Удалённый репозиторий</text><g id="dev1"><rect class="rect-dev" height="65" width="170" x="40" y="240"></rect><path class="user-icon" d="M 52 260 A 6 6 0 0 1 64 260 A 6 6 0 0 1 52 260 Z M 46 280 C 46 272 52 269 58 269 C 64 269 70 272 70 280 Z"></path><text style="fill:var(--md-accent-fg-color); font-family:'Roboto Mono',monospace; font-size:14px; font-weight:bold" text-anchor="start" x="82" y="268">Участник 1</text><text style="fill:var(--md-default-fg-color); font-family:'Roboto Mono',monospace; font-size:12px" text-anchor="start" x="82" y="288">Локальная копия</text></g><g id="dev2"><rect class="rect-dev" height="65" width="170" x="285" y="240"></rect><path class="user-icon" d="M 297 260 A 6 6 0 0 1 309 260 A 6 6 0 0 1 297 260 Z M 291 280 C 291 272 297 269 303 269 C 309 269 315 272 315 280 Z"></path><text style="fill:var(--md-accent-fg-color); font-family:'Roboto Mono',monospace; font-size:14px; font-weight:bold" text-anchor="start" x="327" y="268">Участник 2</text><text style="fill:var(--md-default-fg-color); font-family:'Roboto Mono',monospace; font-size:12px" text-anchor="start" x="327" y="288">Локальная копия</text></g><g id="dev3"><rect class="rect-dev" height="65" width="170" x="530" y="240"></rect><path class="user-icon" d="M 542 260 A 6 6 0 0 1 554 260 A 6 6 0 0 1 542 260 Z M 536 280 C 536 272 542 269 548 269 C 554 269 560 272 560 280 Z"></path><text style="fill:var(--md-accent-fg-color); font-family:'Roboto Mono',monospace; font-size:14px; font-weight:bold" text-anchor="start" x="572" y="268">Участник 3</text><text style="fill:var(--md-default-fg-color); font-family:'Roboto Mono',monospace; font-size:12px" text-anchor="start" x="572" y="288">Локальная копия</text></g><path class="arrow-sync-primary" d="M 170 240 L 290 115"></path><polygon class="arrow-head-primary" points="170,240 180,237 175,228"></polygon><text class="lbl-sync-primary" transform="rotate(-43 215 160)" x="215" y="160">изменения</text><path class="arrow-sync-accent" d="M 270 105 L 140 240"></path><polygon class="arrow-head-accent" points="270,105 260,108 265,117"></polygon><text class="lbl-sync-accent" transform="rotate(-43 220 185)" x="220" y="185">обновления</text><path class="arrow-sync-primary" d="M 345 235 L 345 122" marker-end="url(#arr-center-primary)"></path><text class="lbl-sync-primary" text-anchor="end" x="310" y="175">изменения</text><path class="arrow-sync-accent" d="M 395 122 L 395 235" marker-end="url(#arr-center-accent)"></path><text class="lbl-sync-accent" text-anchor="start" x="410" y="175">обновления</text><path class="arrow-sync-accent" d="M 450 115 L 570 240"></path><polygon class="arrow-head-accent" points="450,115 460,118 455,127"></polygon><text class="lbl-sync-accent" transform="rotate(43 525 160)" x="525" y="160">обновления</text><path class="arrow-sync-primary" d="M 600 240 L 470 105"></path><polygon class="arrow-head-primary" points="600,240 590,237 595,228"></polygon><text class="lbl-sync-primary" transform="rotate(43 520 185)" x="520" y="185">изменения</text></g></svg></p>
+<p>Благодаря этому большинство операций выполняется локально и не требует сети. Такая архитектура обеспечивает высокую производительность системы и надёжность данных.</p>
+<h3 id="-">Веб-сервисы для хранения репозиториев</h3>
+<p>Для хранения удалённых Git-репозиториев и управления ими используются специальные веб-сервисы: GitLab, BitBucket, GitVerse, GitHub.</p>
+<p>GitHub — один из самых популярных веб-сервисов, особенно для проектов с открытым исходным кодом (open-source). </p>
+<div class="admonition info">
+<p class="admonition-title">Информация</p>
+<p>Исходный код этого сайта хранится в репозитории на <strong>GitHub</strong>. Сборка автоматизирована через встроенный инструмент автоматизации <strong>GitHub Actions</strong>, а готовая версия публикуется на бесплатном хостинге статических сайтов <strong>GitHub Pages</strong>.</p>
+</div>
+<h2 id="git_2">Принципы работы Git</h2>
+<p>Любая система контроля версий — это набор контрольных точек. Каждая точка хранит информацию о файлах и изменениях, внесённых с момента создания предыдущей контрольной точки.</p>
+<p>Git при создании контрольной точки «фотографирует» проект, запоминая, как выглядит каждый файл. Если файл не изменился с прошлого снимка, Git не копирует его заново, а просто ссылается на предыдущую версию. Вся информация в системе хранится именно в виде таких снимков.</p>
+<p>Этот снимок называется <strong>коммит</strong> (commit). Коммит создаётся при сохранении изменений.</p>
+<p>Между коммитами можно свободно переключаться и просматривать разные версии проекта. Со временем коммитов становится много, и чтобы в них ориентироваться, в Git есть специальные указатели. Они показывают на нужный коммит.</p>
+<p>Изначально в проекте только один указатель. Он находится на первом коммите. При создании нового коммита указатель перемещается на него:</p>
+<p><svg height="100%" viewbox="0 0 740 230" width="100%" xmlns="http://w3.org">
+<defs>
+<style>
+      .bg-box { fill: none; stroke: var(--md-default-fg-color--light); stroke-width: 1; stroke-dasharray: 4 4; }
+      .step-num { fill: var(--md-default-fg-color--light); font-family: 'Roboto Mono', monospace; font-size: 14px; font-weight: bold; }
+      .branch-rect { fill: var(--md-code-bg-color); stroke: var(--md-primary-fg-color); stroke-width: 2; }
+      .branch-text { fill: var(--md-primary-fg-color); font-family: 'Roboto Mono', monospace; font-size: 20px; font-weight: bold; text-anchor: middle; }
+      .commit-rect { fill: var(--md-primary-fg-color); rx: 12px; ry: 12px; }
+      .commit-text { fill: #ffffff; font-family: 'Roboto Mono', monospace; font-size: 14px; text-anchor: middle; }
+      .arrow-main { stroke: var(--md-primary-fg-color); stroke-width: 2; fill: none; }
+      .arrow-main-head { fill: var(--md-primary-fg-color); }
+      .arrow-dash { stroke: var(--md-default-fg-color--light); stroke-width: 2; stroke-dasharray: 4 4; fill: none; }
+      .arrow-dash-head { fill: var(--md-default-fg-color--light); }
+    </style>
+<marker id="arrow-solid" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="6" refy="5" viewbox="0 0 10 10">
+<path class="arrow-main-head" d="M 0 1.5 L 7 5 L 0 8.5 z"></path>
+</marker>
+<marker id="arrow-dashed" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="6" refy="5" viewbox="0 0 10 10">
+<path class="arrow-dash-head" d="M 0 1.5 L 7 5 L 0 8.5 z"></path>
+</marker>
+</defs>
+<g id="step-1">
+<rect class="bg-box" height="210" width="220" x="15" y="15"></rect>
+<text class="step-num" x="220" y="213">1</text>
+<rect class="branch-rect" height="50" width="100" x="75" y="45"></rect>
+<text class="branch-text" x="125" y="77">A</text>
+<line class="arrow-main" marker-end="url(#arrow-solid)" x1="125" x2="125" y1="95" y2="137"></line>
+<rect class="commit-rect" height="55" width="170" x="40" y="145"></rect>
+<text class="commit-text" x="125" y="178">коммит А-1</text>
+</g>
+<g id="step-2" transform="translate(260, 0)">
+<rect class="bg-box" height="210" width="450" x="15" y="15"></rect>
+<text class="step-num" x="450" y="213">2</text>
+<rect class="commit-rect" height="55" width="170" x="40" y="145"></rect>
+<text class="commit-text" x="125" y="178">коммит А-1</text>
+<line class="arrow-dash" marker-end="url(#arrow-dashed)" x1="210" x2="242" y1="172.5" y2="172.5"></line>
+<rect class="branch-rect" height="50" width="100" x="285" y="45"></rect>
+<text class="branch-text" x="335" y="77">A</text>
+<line class="arrow-main" marker-end="url(#arrow-solid)" x1="335" x2="335" y1="95" y2="137"></line>
+<rect class="commit-rect" height="55" width="170" x="250" y="145"></rect>
+<text class="commit-text" x="335" y="178">коммит А-2</text>
+</g>
+</svg></p>
+<p>Для создания новой версии файла проекта создаётся новый указатель. Теперь оба указателя находятся на последнем коммите:</p>
+<p><svg style="margin: 0 auto; display: block; max-width: 480px; width: 100%; height: 100%;" viewbox="0 0 480 310" xmlns="http://w3.org"><defs><style>.bg-box{fill:none;stroke:var(--md-default-fg-color--light);stroke-width:1;stroke-dasharray:4 4;}.step-num{fill:var(--md-default-fg-color--light);font-family:'Roboto Mono',monospace;font-size:14px;font-weight:bold;}.branch-rect{fill:var(--md-code-bg-color);stroke:var(--md-primary-fg-color);stroke-width:2;}.branch-text{fill:var(--md-primary-fg-color);font-family:'Roboto Mono',monospace;font-size:20px;font-weight:bold;text-anchor:middle;}.branch-rect-b{fill:var(--md-code-bg-color);stroke:var(--md-accent-fg-color);stroke-width:2;}.branch-text-b{fill:var(--md-accent-fg-color);font-family:'Roboto Mono',monospace;font-size:20px;font-weight:bold;text-anchor:middle;}.commit-rect{fill:var(--md-primary-fg-color);rx:12px;ry:12px;}.commit-text{fill:#ffffff;font-family:'Roboto Mono',monospace;font-size:14px;text-anchor:middle;}.arrow-main{stroke:var(--md-primary-fg-color);stroke-width:2;fill:none;}.arrow-main-head{fill:var(--md-primary-fg-color);}.arrow-main-b{stroke:var(--md-accent-fg-color);stroke-width:2;fill:none;}.arrow-main-head-b{fill:var(--md-accent-fg-color);}.arrow-dash{stroke:var(--md-default-fg-color--light);stroke-width:2;stroke-dasharray:4 4;fill:none;}.arrow-dash-head{fill:var(--md-default-fg-color--light);}</style><marker id="as3" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="6" refy="5" viewbox="0 0 10 10"><path class="arrow-main-head" d="M 0 1.5 L 7 5 L 0 8.5 z"></path></marker><marker id="as3b" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="6" refy="5" viewbox="0 0 10 10"><path class="arrow-main-head-b" d="M 0 1.5 L 7 5 L 0 8.5 z"></path></marker><marker id="ad3" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="6" refy="5" viewbox="0 0 10 10"><path class="arrow-dash-head" d="M 0 1.5 L 7 5 L 0 8.5 z"></path></marker></defs><g id="step-3"><rect class="bg-box" height="280" width="450" x="15" y="15"></rect><text class="step-num" x="450" y="283">3</text><rect class="commit-rect" height="55" width="170" x="40" y="115"></rect><text class="commit-text" x="125" y="148">коммит А-1</text><line class="arrow-dash" marker-end="url(#ad3)" x1="210" x2="242" y1="142.5" y2="142.5"></line><rect class="branch-rect" height="50" width="100" x="285" y="40"></rect><text class="branch-text" x="335" y="72">A</text><line class="arrow-main" marker-end="url(#as3)" x1="335" x2="335" y1="90" y2="107"></line><rect class="commit-rect" height="55" width="170" x="250" y="115"></rect><text class="commit-text" x="335" y="148">коммит А-2</text><line class="arrow-main-b" marker-end="url(#as3b)" x1="335" x2="335" y1="215" y2="182"></line><rect class="branch-rect-b" height="50" width="100" x="285" y="215"></rect><text class="branch-text-b" x="335" y="247">Б</text></g></svg></p>
+<p>После переключения на новый указатель файл редактируется и фиксируется коммитом. Указатель Б переходит на новый коммит, указатель А остаётся на прошлом коммите:</p>
+<p><svg style="margin: 0 auto; display: block; max-width: 740px; width: 100%; height: 100%" viewbox="0 0 740 370" xmlns="http://w3.org"><defs><style>.bg-box{fill:none;stroke:var(--md-default-fg-color--light);stroke-width:1;stroke-dasharray:4 4;}.step-num{fill:var(--md-default-fg-color--light);font-family:'Roboto Mono',monospace;font-size:14px;font-weight:bold;}.branch-rect{fill:var(--md-code-bg-color);stroke:var(--md-primary-fg-color);stroke-width:2;}.branch-text{fill:var(--md-primary-fg-color);font-family:'Roboto Mono',monospace;font-size:20px;font-weight:bold;text-anchor:middle;}.branch-rect-b{fill:var(--md-code-bg-color);stroke:var(--md-accent-fg-color);stroke-width:2;}.branch-text-b{fill:var(--md-accent-fg-color);font-family:'Roboto Mono',monospace;font-size:20px;font-weight:bold;text-anchor:middle;}.commit-rect{fill:var(--md-primary-fg-color);rx:12px;ry:12px;}.commit-text{fill:#ffffff;font-family:'Roboto Mono',monospace;font-size:14px;text-anchor:middle;}.commit-rect-b{fill:var(--md-accent-fg-color);rx:12px;ry:12px;}.commit-text-b{fill:var(--md-default-bg-color);font-family:'Roboto Mono',monospace;font-size:14px;text-anchor:middle;}.arrow-main{stroke:var(--md-primary-fg-color);stroke-width:2;fill:none;}.arrow-main-head{fill:var(--md-primary-fg-color);}.arrow-main-b{stroke:var(--md-accent-fg-color);stroke-width:2;fill:none;}.arrow-main-head-b{fill:var(--md-accent-fg-color);}.arrow-dash{stroke:var(--md-default-fg-color--light);stroke-width:2;stroke-dasharray:4 4;fill:none;}.arrow-dash-head{fill:var(--md-default-fg-color--light);}</style><marker id="as4" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="6" refy="5" viewbox="0 0 10 10"><path class="arrow-main-head" d="M 0 1.5 L 7 5 L 0 8.5 z"></path></marker><marker id="as4b" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="6" refy="5" viewbox="0 0 10 10"><path class="arrow-main-head-b" d="M 0 1.5 L 7 5 L 0 8.5 z"></path></marker><marker id="ad4" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="6" refy="5" viewbox="0 0 10 10"><path class="arrow-dash-head" d="M 0 1.5 L 7 5 L 0 8.5 z"></path></marker></defs><g id="step-4"><rect class="bg-box" height="340" width="710" x="15" y="15"></rect><text class="step-num" x="710" y="343">4</text><rect class="commit-rect" height="55" width="170" x="40" y="115"></rect><text class="commit-text" x="125" y="148">коммит А-1</text><line class="arrow-dash" marker-end="url(#ad4)" x1="210" x2="242" y1="142.5" y2="142.5"></line><rect class="branch-rect" height="50" width="100" x="285" y="40"></rect><text class="branch-text" x="335" y="72">A</text><line class="arrow-main" marker-end="url(#as4)" x1="335" x2="335" y1="90" y2="107"></line><rect class="commit-rect" height="55" width="170" x="250" y="115"></rect><text class="commit-text" x="335" y="148">коммит А-2</text><path class="arrow-dash" d="M 420 142.5 L 470 142.5 L 470 217.5 L 492 217.5" marker-end="url(#ad4)"></path><rect class="commit-rect-b" height="55" width="170" x="500" y="190"></rect><text class="commit-text-b" x="585" y="223">коммит Б-1</text><line class="arrow-main-b" marker-end="url(#as4b)" x1="585" x2="585" y1="270" y2="253"></line><rect class="branch-rect-b" height="50" width="100" x="535" y="270"></rect><text class="branch-text-b" x="585" y="302">Б</text></g></svg></p>
+<p>Теперь есть две параллельные версии файла, между которыми можно свободно переключаться. Рассмотрим внесение изменений в версию А. Для этого вернёмся на указатель А, отредактируем файл и создадим новый коммит:</p>
+<p><svg style="margin: 0 auto; display: block; max-width: 760px; width: 100%; height: 100%" viewbox="0 0 760 340" xmlns="http://w3.org"><defs><style>.bg-box{fill:none;stroke:var(--md-default-fg-color--light);stroke-width:1;stroke-dasharray:4 4}.step-num{fill:var(--md-default-fg-color--light);font-family:'Roboto Mono',monospace;font-size:14px;font-weight:bold}.branch-rect{fill:var(--md-code-bg-color);stroke:var(--md-primary-fg-color);stroke-width:2}.branch-text{fill:var(--md-primary-fg-color);font-family:'Roboto Mono',monospace;font-size:20px;font-weight:bold;text-anchor:middle}.branch-rect-b{fill:var(--md-code-bg-color);stroke:var(--md-accent-fg-color);stroke-width:2}.branch-text-b{fill:var(--md-accent-fg-color);font-family:'Roboto Mono',monospace;font-size:20px;font-weight:bold;text-anchor:middle}.commit-rect{fill:var(--md-primary-fg-color);rx:12px;ry:12px}.commit-text{fill:#ffffff;font-family:'Roboto Mono',monospace;font-size:14px;text-anchor:middle}.commit-rect-b{fill:var(--md-accent-fg-color);rx:12px;ry:12px}.commit-text-b{fill:var(--md-default-bg-color);font-family:'Roboto Mono',monospace;font-size:14px;text-anchor:middle}.arrow-main{stroke:var(--md-primary-fg-color);stroke-width:2;fill:none}.arrow-main-head{fill:var(--md-primary-fg-color)}.arrow-main-b{stroke:var(--md-accent-fg-color);stroke-width:2;fill:none}.arrow-main-head-b{fill:var(--md-accent-fg-color)}.arrow-dash{stroke:var(--md-default-fg-color--light);stroke-width:2;stroke-dasharray:4 4;fill:none}.arrow-dash-head{fill:var(--md-default-fg-color--light)}</style><marker id="as5" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="6" refy="5" viewbox="0 0 10 10"><path class="arrow-main-head" d="M 0 1.5 L 7 5 L 0 8.5 z"></path></marker><marker id="as5b" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="6" refy="5" viewbox="0 0 10 10"><path class="arrow-main-head-b" d="M 0 1.5 L 7 5 L 0 8.5 z"></path></marker><marker id="ad5" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="6" refy="5" viewbox="0 0 10 10"><path class="arrow-dash-head" d="M 0 1.5 L 7 5 L 0 8.5 z"></path></marker></defs><g id="step-5"><rect class="bg-box" height="310" width="730" x="15" y="15"></rect><text class="step-num" x="730" y="313">5</text><rect class="commit-rect" height="55" width="170" x="40" y="105"></rect><text class="commit-text" x="125" y="138">коммит А-1</text><line class="arrow-dash" marker-end="url(#ad5)" x1="210" x2="242" y1="132.5" y2="132.5"></line><rect class="commit-rect" height="55" width="170" x="250" y="105"></rect><text class="commit-text" x="335" y="138">коммит А-2</text><line class="arrow-dash" marker-end="url(#ad5)" x1="420" x2="492" y1="132.5" y2="132.5"></line><rect class="branch-rect" height="50" width="100" x="535" y="30"></rect><text class="branch-text" x="585" y="62">A</text><line class="arrow-main" marker-end="url(#as5)" x1="585" x2="585" y1="80" y2="97"></line><rect class="commit-rect" height="55" width="170" x="500" y="105"></rect><text class="commit-text" x="585" y="138">коммит А-3</text><path class="arrow-dash" d="M 420 132.5 L 450 132.5 L 450 207.5 L 492 207.5" marker-end="url(#ad5)"></path><rect class="commit-rect-b" height="55" width="170" x="500" y="180"></rect><text class="commit-text-b" x="585" y="213">коммит Б-1</text><line class="arrow-main-b" marker-end="url(#as5b)" x1="585" x2="585" y1="260" y2="243"></line><rect class="branch-rect-b" height="50" width="100" x="535" y="260"></rect><text class="branch-text-b" x="585" y="292">Б</text></g></svg></p>
+<p>Указатель А переместился на новый коммит. Таким образом, начали выделяться параллельные цепочки коммитов под двумя разными указателями. Эти цепочки параллельны и независимы друг от друга. </p>
+<p>Например, можно вернуться на указатель Б и создать там ещё два коммита, а потом переключиться на указатель А и добавить один коммит:</p>
+<p><svg style="margin: 0 auto; display: block; max-width: 1120px; width: 100%; height: 100%" viewbox="0 0 1120 380" xmlns="http://w3.org"><defs><style>.bg-box{fill:none;stroke:var(--md-default-fg-color--light);stroke-width:1;stroke-dasharray:4 4}.step-num{fill:var(--md-default-fg-color--light);font-family:'Roboto Mono',monospace;font-size:18px;font-weight:900}.branch-rect{fill:var(--md-code-bg-color);stroke:var(--md-primary-fg-color);stroke-width:2}.branch-text{fill:var(--md-primary-fg-color);font-family:'Roboto Mono',monospace;font-size:20px;font-weight:bold;text-anchor:middle}.branch-rect-b{fill:var(--md-code-bg-color);stroke:var(--md-accent-fg-color);stroke-width:2}.branch-text-b{fill:var(--md-accent-fg-color);font-family:'Roboto Mono',monospace;font-size:20px;font-weight:bold;text-anchor:middle}.commit-rect{fill:var(--md-primary-fg-color);rx:12px;ry:12px}.commit-text{fill:#ffffff;font-family:'Roboto Mono',monospace;font-size:14px;text-anchor:middle}.commit-rect-b{fill:var(--md-accent-fg-color);rx:12px;ry:12px}.commit-text-b{fill:var(--md-default-bg-color);font-family:'Roboto Mono',monospace;font-size:14px;text-anchor:middle}.arrow-main{stroke:var(--md-primary-fg-color);stroke-width:2;fill:none}.arrow-main-head{fill:var(--md-primary-fg-color)}.arrow-main-b{stroke:var(--md-accent-fg-color);stroke-width:2;fill:none}.arrow-main-head-b{fill:var(--md-accent-fg-color)}.arrow-dash{stroke:var(--md-default-fg-color--light);stroke-width:2;stroke-dasharray:4 4;fill:none}.arrow-dash-head{fill:var(--md-default-fg-color--light)}</style><marker id="as6" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="6" refy="5" viewbox="0 0 10 10"><path class="arrow-main-head" d="M 0 1.5 L 7 5 L 0 8.5 z"></path></marker><marker id="as6b" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="6" refy="5" viewbox="0 0 10 10"><path class="arrow-main-head-b" d="M 0 1.5 L 7 5 L 0 8.5 z"></path></marker><marker id="ad6" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="6" refy="5" viewbox="0 0 10 10"><path class="arrow-dash-head" d="M 0 1.5 L 7 5 L 0 8.5 z"></path></marker></defs><g id="step-6"><rect class="bg-box" height="340" width="1090" x="15" y="15"></rect><text class="step-num" x="1090" y="343">6</text><rect class="commit-rect" height="55" width="170" x="40" y="115"></rect><text class="commit-text" x="125" y="148">коммит А-1</text><line class="arrow-dash" marker-end="url(#ad6)" x1="210" x2="242" y1="142.5" y2="142.5"></line><rect class="commit-rect" height="55" width="170" x="250" y="115"></rect><text class="commit-text" x="335" y="148">коммит А-2</text><line class="arrow-dash" marker-end="url(#ad6)" x1="420" x2="452" y1="142.5" y2="142.5"></line><rect class="commit-rect" height="55" width="170" x="460" y="115"></rect><text class="commit-text" x="545" y="148">коммит А-3</text><line class="arrow-dash" marker-end="url(#ad6)" x1="630" x2="662" y1="142.5" y2="142.5"></line><rect class="branch-rect" height="50" width="100" x="705" y="40"></rect><text class="branch-text" x="755" y="72">A</text><line class="arrow-main" marker-end="url(#as6)" x1="755" x2="755" y1="90" y2="107"></line><rect class="commit-rect" height="55" width="170" x="670" y="115"></rect><text class="commit-text" x="755" y="148">коммит А-4</text><path class="arrow-dash" d="M 420 142.5 L 435 142.5 L 435 217.5 L 452 217.5" marker-end="url(#ad6)"></path><rect class="commit-rect-b" height="55" width="170" x="460" y="190"></rect><text class="commit-text-b" x="545" y="223">коммит Б-1</text><line class="arrow-dash" marker-end="url(#ad6)" x1="630" x2="662" y1="217.5" y2="217.5"></line><rect class="commit-rect-b" height="55" width="170" x="670" y="190"></rect><text class="commit-text-b" x="755" y="223">коммит Б-2</text><line class="arrow-dash" marker-end="url(#ad6)" x1="840" x2="872" y1="217.5" y2="217.5"></line><rect class="commit-rect-b" height="55" width="170" x="880" y="190"></rect><text class="commit-text-b" x="965" y="223">коммит Б-3</text><line class="arrow-main-b" marker-end="url(#as6b)" x1="965" x2="965" y1="270" y2="253"></line><rect class="branch-rect-b" height="50" width="100" x="915" y="270"></rect><text class="branch-text-b" x="965" y="302">Б</text></g></svg></p>
+<p>При необходимости можно выбрать любой из имеющихся коммитов, создать от него ещё один указатель и получить третью параллельную цепочку:</p>
+<p><svg style="margin: 0 auto; display: block; max-width: 940px; width: 100%; height: 100%" viewbox="0 0 940 500" xmlns="http://w3.org"><defs><style>.bg-box{fill:none;stroke:var(--md-default-fg-color--light);stroke-width:1;stroke-dasharray:4 4}.step-num{fill:var(--md-default-fg-color--light);font-family:'Roboto Mono',monospace;font-size:14px;font-weight:bold}.branch-rect{fill:var(--md-code-bg-color);stroke:var(--md-primary-fg-color);stroke-width:2}.branch-text{fill:var(--md-primary-fg-color);font-family:'Roboto Mono',monospace;font-size:20px;font-weight:bold;text-anchor:middle}.branch-rect-b{fill:var(--md-code-bg-color);stroke:var(--md-accent-fg-color);stroke-width:2}.branch-text-b{fill:var(--md-accent-fg-color);font-family:'Roboto Mono',monospace;font-size:20px;font-weight:bold;text-anchor:middle}.branch-rect-v{fill:var(--md-code-bg-color);stroke:var(--md-default-fg-color);stroke-width:2}.branch-text-v{fill:var(--md-default-fg-color);font-family:'Roboto Mono',monospace;font-size:20px;font-weight:bold;text-anchor:middle}.commit-rect{fill:var(--md-primary-fg-color);rx:12px;ry:12px}.commit-text{fill:#ffffff;font-family:'Roboto Mono',monospace;font-size:14px;text-anchor:middle}.commit-rect-b{fill:var(--md-accent-fg-color);rx:12px;ry:12px}.commit-text-b{fill:var(--md-default-bg-color);font-family:'Roboto Mono',monospace;font-size:14px;text-anchor:middle}.commit-rect-v{fill:var(--md-default-fg-color);rx:12px;ry:12px}.commit-text-v{fill:var(--md-default-bg-color);font-family:'Roboto Mono',monospace;font-size:14px;text-anchor:middle}.arrow-main{stroke:var(--md-primary-fg-color);stroke-width:2;fill:none}.arrow-main-head{fill:var(--md-primary-fg-color)}.arrow-main-b{stroke:var(--md-accent-fg-color);stroke-width:2;fill:none}.arrow-main-head-b{fill:var(--md-accent-fg-color)}.arrow-main-v{stroke:var(--md-default-fg-color);stroke-width:2;fill:none}.arrow-main-head-v{fill:var(--md-default-fg-color)}.arrow-dash{stroke:var(--md-default-fg-color--light);stroke-width:2;stroke-dasharray:4 4;fill:none}.arrow-dash-head{fill:var(--md-default-fg-color--light)}</style><marker id="as7" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="6" refy="5" viewbox="0 0 10 10"><path class="arrow-main-head" d="M 0 1.5 L 7 5 L 0 8.5 z"></path></marker><marker id="as7b" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="6" refy="5" viewbox="0 0 10 10"><path class="arrow-main-head-b" d="M 0 1.5 L 7 5 L 0 8.5 z"></path></marker><marker id="as7v" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="6" refy="5" viewbox="0 0 10 10"><path class="arrow-main-head-v" d="M 0 1.5 L 7 5 L 0 8.5 z"></path></marker><marker id="ad7" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="6" refy="5" viewbox="0 0 10 10"><path class="arrow-dash-head" d="M 0 1.5 L 7 5 L 0 8.5 z"></path></marker></defs><g id="step-7"><rect class="bg-box" height="470" width="910" x="15" y="15"></rect><text class="step-num" x="910" y="473">7</text><rect class="commit-rect" height="55" width="135" x="40" y="105"></rect><text class="commit-text" x="107.5" y="138">коммит А-1</text><line class="arrow-dash" marker-end="url(#ad7)" x1="175" x2="195" y1="132.5" y2="132.5"></line><rect class="commit-rect" height="55" width="135" x="200" y="105"></rect><text class="commit-text" x="267.5" y="138">коммит А-2</text><path class="arrow-dash" d="M 335 142.5 L 350 142.5 L 350 217.5 L 360 217.5" marker-end="url(#ad7)"></path><line class="arrow-dash" marker-end="url(#ad7)" x1="335" x2="360" y1="142.5" y2="142.5"></line><rect class="commit-rect" height="55" width="135" x="365" y="105"></rect><text class="commit-text" x="432.5" y="138">коммит А-3</text><line class="arrow-dash" marker-end="url(#ad7)" x1="500" x2="525" y1="132.5" y2="132.5"></line><rect class="branch-rect" height="50" width="100" x="547.5" y="40"></rect><text class="branch-text" x="597.5" y="72">A</text><line class="arrow-main" marker-end="url(#as7)" x1="597.5" x2="597.5" y1="90" y2="105"></line><rect class="commit-rect" height="55" width="135" x="530" y="105"></rect><text class="commit-text" x="597.5" y="138">коммит А-4</text><rect class="commit-rect-b" height="55" width="135" x="365" y="180"></rect><text class="commit-text-b" x="432.5" y="213">коммит Б-1</text><line class="arrow-dash" marker-end="url(#ad7)" x1="500" x2="525" y1="207.5" y2="207.5"></line><rect class="commit-rect-b" height="55" width="135" x="530" y="180"></rect><text class="commit-text-b" x="597.5" y="213">коммит Б-2</text><line class="arrow-dash" marker-end="url(#ad7)" x1="665" x2="695" y1="207.5" y2="207.5"></line><rect class="commit-rect-b" height="55" width="135" x="695" y="180"></rect><text class="commit-text-b" x="762.5" y="213">коммит Б-3</text><line class="arrow-main-b" marker-end="url(#as7b)" x1="762.5" x2="762.5" y1="260" y2="235"></line><rect class="branch-rect-b" height="50" width="100" x="712.5" y="260"></rect><text class="branch-text-b" x="762.5" y="292">Б</text><path class="arrow-dash" d="M 500 207.5 L 512 207.5 L 512 352.5 L 525 352.5" marker-end="url(#ad7)"></path><rect class="commit-rect-v" height="55" width="135" x="530" y="325"></rect><text class="commit-text-v" x="597.5" y="358">коммит В-1</text><line class="arrow-dash" marker-end="url(#ad7)" x1="665" x2="695" y1="352.5" y2="352.5"></line><rect class="commit-rect-v" height="55" width="135" x="695" y="325"></rect><text class="commit-text-v" x="762.5" y="358">коммит В-2</text><line class="arrow-main-v" marker-end="url(#as7v)" x1="762.5" x2="762.5" y1="405" y2="390"></line><rect class="branch-rect-v" height="50" width="100" x="712.5" y="405"></rect><text class="branch-text-v" x="762.5" y="437">В</text></g></svg></p>
+<p>Каждый новый указатель ответвляется от выбранного коммита и ведёт за собой новую цепочку коммитов. Такие указатели, а также цепочки коммитов, которые тянутся за ними, называются <strong>ветками</strong> (branch).</p>
+<p>В каждом проекте по умолчанию существует одна главная ветка (<code>master</code> или <code>main</code>). Главная ветка содержит стабильную версию проекта – чистовик. Изменения не вносятся напрямую в чистовик. Для этого создаётся новая ветка-черновика. Это позволяет сохранять основную версию в целостности до завершения работы.</p>
+<p><svg style="margin: 0 auto; display: block; max-width: 740px; width: 100%; height: 100%" viewbox="0 0 740 370" xmlns="http://w3.org"><defs><style>.bg-box{fill:none;stroke:var(--md-default-fg-color--light);stroke-width:1;stroke-dasharray:4 4;}.step-num{fill:var(--md-default-fg-color--light);font-family:'Roboto Mono',monospace;font-size:14px;font-weight:bold;}.branch-rect{fill:var(--md-code-bg-color);stroke:var(--md-primary-fg-color);stroke-width:2;}.branch-text{fill:var(--md-primary-fg-color);font-family:'Roboto Mono',monospace;font-size:18px;font-weight:bold;text-anchor:middle;}.branch-rect-b{fill:var(--md-code-bg-color);stroke:var(--md-accent-fg-color);stroke-width:2;}.branch-text-b{fill:var(--md-accent-fg-color);font-family:'Roboto Mono',monospace;font-size:16px;font-weight:bold;text-anchor:middle;}.commit-rect{fill:var(--md-primary-fg-color);rx:12px;ry:12px;}.commit-text{fill:#ffffff;font-family:'Roboto Mono',monospace;font-size:14px;text-anchor:middle;}.commit-rect-b{fill:var(--md-accent-fg-color);rx:12px;ry:12px;}.commit-text-b{fill:var(--md-default-bg-color);font-family:'Roboto Mono',monospace;font-size:14px;text-anchor:middle;}.arrow-main{stroke:var(--md-primary-fg-color);stroke-width:2;fill:none;}.arrow-main-head{fill:var(--md-primary-fg-color);}.arrow-main-b{stroke:var(--md-accent-fg-color);stroke-width:2;fill:none;}.arrow-main-head-b{fill:var(--md-accent-fg-color);}.arrow-dash{stroke:var(--md-default-fg-color--light);stroke-width:2;stroke-dasharray:4 4;fill:none;}.arrow-dash-head{fill:var(--md-default-fg-color--light);}</style><marker id="as8" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="6" refy="5" viewbox="0 0 10 10"><path class="arrow-main-head" d="M 0 1.5 L 7 5 L 0 8.5 z"></path></marker><marker id="as8b" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="6" refy="5" viewbox="0 0 10 10"><path class="arrow-main-head-b" d="M 0 1.5 L 7 5 L 0 8.5 z"></path></marker><marker id="ad8" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="6" refy="5" viewbox="0 0 10 10"><path class="arrow-dash-head" d="M 0 1.5 L 7 5 L 0 8.5 z"></path></marker></defs><g id="step-8"><rect class="bg-box" height="340" width="710" x="15" y="15"></rect><text class="step-num" x="710" y="343">8</text><rect class="commit-rect" height="55" width="170" x="40" y="115"></rect><text class="commit-text" x="125" y="148">коммит А-1</text><line class="arrow-dash" marker-end="url(#ad8)" x1="210" x2="242" y1="142.5" y2="142.5"></line><rect class="branch-rect" height="50" width="100" x="285" y="40"></rect><text class="branch-text" x="335" y="72">master</text><line class="arrow-main" marker-end="url(#as8)" x1="335" x2="335" y1="90" y2="107"></line><rect class="commit-rect" height="55" width="170" x="250" y="115"></rect><text class="commit-text" x="335" y="148">коммит А-2</text><path class="arrow-dash" d="M 420 142.5 L 470 142.5 L 470 217.5 L 492 217.5" marker-end="url(#ad8)"></path><rect class="commit-rect-b" height="55" width="170" x="500" y="190"></rect><text class="commit-text-b" x="585" y="223">коммит Б-1</text><line class="arrow-main-b" marker-end="url(#as8b)" x1="585" x2="585" y1="270" y2="253"></line><rect class="branch-rect-b" height="50" width="160" x="505" y="270"></rect><text class="branch-text-b" x="585" y="302">feature-branch</text></g></svg></p>
+<p>После завершения работы над черновиком изменения вносятся в чистовик — новая ветка вливается обратно в главную ветку. Этот процесс в Git называется <strong>слиянием</strong> (merge):</p>
+<p><svg style="margin: 0 auto; display: block; max-width: 1140px; width: 100%; height: 100%" viewbox="0 0 1140 370" xmlns="http://w3.org"><defs><style>.bg-box{fill:none;stroke:var(--md-default-fg-color--light);stroke-width:1;stroke-dasharray:4 4}.step-num{fill:var(--md-default-fg-color--light);font-family:'Roboto Mono',monospace;font-size:14px;font-weight:bold}.branch-rect{fill:var(--md-code-bg-color);stroke:var(--md-primary-fg-color);stroke-width:2}.branch-text{fill:var(--md-primary-fg-color);font-family:'Roboto Mono',monospace;font-size:18px;font-weight:bold;text-anchor:middle}.branch-rect-b{fill:var(--md-code-bg-color);stroke:var(--md-accent-fg-color);stroke-width:2}.branch-text-b{fill:var(--md-accent-fg-color);font-family:'Roboto Mono',monospace;font-size:14px;font-weight:bold;text-anchor:middle}.commit-rect{fill:var(--md-primary-fg-color);rx:12px;ry:12px}.commit-text{fill:#ffffff;font-family:'Roboto Mono',monospace;font-size:14px;text-anchor:middle}.commit-rect-b{fill:var(--md-accent-fg-color);rx:12px;ry:12px}.commit-text-b{fill:var(--md-default-bg-color);font-family:'Roboto Mono',monospace;font-size:14px;text-anchor:middle}.arrow-main{stroke:var(--md-primary-fg-color);stroke-width:2;fill:none}.arrow-main-head{fill:var(--md-primary-fg-color)}.arrow-main-b{stroke:var(--md-accent-fg-color);stroke-width:2;fill:none}.arrow-main-head-b{fill:var(--md-accent-fg-color)}.arrow-dash{stroke:var(--md-default-fg-color--light);stroke-width:2;stroke-dasharray:4 4;fill:none}.arrow-dash-head{fill:var(--md-default-fg-color--light)}.merge-label{fill:var(--md-default-fg-color--light);font-family:'Roboto Mono',monospace;font-size:12px;font-weight:bold}</style><marker id="as9" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="6" refy="5" viewbox="0 0 10 10"><path class="arrow-main-head" d="M 0 1.5 L 7 5 L 0 8.5 z"></path></marker><marker id="as9b" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="6" refy="5" viewbox="0 0 10 10"><path class="arrow-main-head-b" d="M 0 1.5 L 7 5 L 0 8.5 z"></path></marker><marker id="ad9" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="6" refy="5" viewbox="0 0 10 10"><path class="arrow-dash-head" d="M 0 1.5 L 7 5 L 0 8.5 z"></path></marker></defs><g id="step-9"><rect class="bg-box" height="340" width="1110" x="15" y="15"></rect><text class="step-num" x="1110" y="343">9</text><rect class="commit-rect" height="55" width="135" x="40" y="115"></rect><text class="commit-text" x="107.5" y="148">коммит А-1</text><line class="arrow-dash" marker-end="url(#ad9)" x1="175" x2="195" y1="142.5" y2="142.5"></line><rect class="commit-rect" height="55" width="135" x="200" y="115"></rect><text class="commit-text" x="267.5" y="148">коммит А-2</text><path class="arrow-dash" d="M 335 142.5 L 350 142.5 L 350 217.5 L 360 217.5" marker-end="url(#ad9)"></path><line class="arrow-dash" marker-end="url(#ad9)" x1="335" x2="360" y1="142.5" y2="142.5"></line><rect class="commit-rect" height="55" width="135" x="365" y="115"></rect><text class="commit-text" x="432.5" y="148">коммит А-3</text><line class="arrow-dash" marker-end="url(#ad9)" x1="500" x2="525" y1="142.5" y2="142.5"></line><rect class="commit-rect" height="55" width="135" x="530" y="115"></rect><text class="commit-text" x="597.5" y="148">коммит А-4</text><text class="merge-label" text-anchor="middle" x="795" y="133">merge</text><line class="arrow-dash" marker-end="url(#ad9)" x1="665" x2="925" y1="142.5" y2="142.5"></line><rect class="branch-rect" height="50" width="100" x="955" y="40"></rect><text class="branch-text" x="1005" y="72">master</text><line class="arrow-main" marker-end="url(#as9)" x1="1005" x2="1005" y1="90" y2="112"></line><rect class="commit-rect" height="55" width="135" x="930" y="115"></rect><text class="commit-text" x="997.5" y="148">коммит А-5</text><rect class="commit-rect-b" height="55" width="135" x="365" y="190"></rect><text class="commit-text-b" x="432.5" y="223">коммит Б-1</text><line class="arrow-dash" marker-end="url(#ad9)" x1="500" x2="525" y1="217.5" y2="217.5"></line><rect class="commit-rect-b" height="55" width="135" x="530" y="190"></rect><text class="commit-text-b" x="597.5" y="223">коммит Б-2</text><line class="arrow-dash" marker-end="url(#ad9)" x1="665" x2="695" y1="217.5" y2="217.5"></line><rect class="commit-rect-b" height="55" width="135" x="695" y="190"></rect><text class="commit-text-b" x="762.5" y="223">коммит Б-3</text><line class="arrow-main-b" marker-end="url(#as9b)" x1="762.5" x2="762.5" y1="270" y2="253"></line><rect class="branch-rect-b" height="50" width="140" x="692.5" y="270"></rect><text class="branch-text-b" x="762.5" y="302">feature-branch</text><text class="merge-label" text-anchor="middle" transform="rotate(-33 875 175)" x="875" y="175">merge</text><path class="arrow-dash" d="M 830 217.5 L 925 147.5" marker-end="url(#ad9)"></path></g></svg></p>
+<p>В проекте можно создавать неограниченное количество веток, переключаться между ними, объединять, переносить коммиты и выполнять другие операции. Это позволяет организовать командную работу и выполнять несколько задач параллельно.</p>
+<p>Управление файлами в Git осуществляется через терминал с помощью специальных команд.</p>
+<h2 id="git_3">Основные команды Git</h2>
+<table>
+<thead>
+<tr>
+<th>Команда</th>
+<th>Назначение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git clone</code></td>
+<td>Клонирует удалённый репозиторий на локальный компьютер</td>
+</tr>
+<tr>
+<td><code>git status</code></td>
+<td>Показывает текущее состояние репозитория (изменённые файлы, ветку)</td>
+</tr>
+<tr>
+<td><code>git add</code></td>
+<td>Добавляет изменения в индекс (staging area) для подготовки к коммиту</td>
+</tr>
+<tr>
+<td><code>git commit</code></td>
+<td>Создаёт коммит из проиндексированных изменений</td>
+</tr>
+<tr>
+<td><code>git push</code></td>
+<td>Отправляет локальные коммиты в удалённый репозиторий</td>
+</tr>
+<tr>
+<td><code>git pull</code></td>
+<td>Загружает изменения из удалённого репозитория и сливает с текущей веткой</td>
+</tr>
+<tr>
+<td><code>git fetch</code></td>
+<td>Загружает изменения из удалённого репозитория без слияния (просмотр)</td>
+</tr>
+<tr>
+<td><code>git branch</code></td>
+<td>Показывает список веток или создаёт новую ветку</td>
+</tr>
+<tr>
+<td><code>git switch</code> / <code>git checkout</code></td>
+<td>Переключается между ветками</td>
+</tr>
+<tr>
+<td><code>git merge</code></td>
+<td>Сливает изменения из одной ветки в другую</td>
+</tr>
+<tr>
+<td><code>git log</code></td>
+<td>Показывает историю коммитов</td>
+</tr>
+<tr>
+<td><code>git diff</code></td>
+<td>Показывает различия между файлами или коммитами</td>
+</tr>
+<tr>
+<td><code>git restore</code></td>
+<td>Отменяет изменения в файлах (рабочая директория или индекс)</td>
+</tr>
+<tr>
+<td><code>git reset</code></td>
+<td>Отменяет локальный коммит</td>
+</tr>
+<tr>
+<td><code>git revert</code></td>
+<td>Отменяет опубликованный коммит (создаёт новый коммит отмены)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_1">Клонирование репозитория</h3>
+<p>Клонирование репозитория — это создание локальной копии репозитория на устройстве пользователя для дальнейшей работы с файлами репозитория.</p>
+<ol>
+<li>Откройте удалённый репозиторий в GitHub.</li>
+<li>На вкладке «Code» нажмите кнопку <strong>Code</strong>.</li>
+<li>В выпадающем окне перейдите на <strong>Local</strong> → <strong>HTML</strong> и скопируйте ссылку на репозиторий.</li>
+<li>Выберите на вашем устройстве папку, в которую вы хотите поместить локальный репозиторий.</li>
+<li>Откройте командную строку в этой папке и выполните команду для клонирования репозитория:
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>git clone ссылка-на-репозиторий-из-пункта-3
+</code></pre></div></li>
+</ol>
+<div class="admonition quote">
+<p class="admonition-title">Как открыть нужную папку в командной строке?</p>
+<p>Для перехода в нужную папку через командную строку используйте команду <code>cd путь-до-папки</code>:
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>cd C:\Users\User-1\folder-for-repo
+</code></pre></div><p></p>
+</div>
+<h3 id="_2">Настройка параметров конфигурации</h3>
+<p>Установите имя пользователя и электронный адрес с помощью команды <code>git config --global</code>:</p>
+<div class="highlight"><span class="filename">Пример</span><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nx">git</span><span class="w"> </span><span class="nx">config</span><span class="w"> </span><span class="o">--</span><span class="nx">global</span><span class="w"> </span><span class="nx">user</span><span class="p">.</span><span class="nx">email</span><span class="w"> </span><span class="nx">yulyashabel5</span><span class="err">@</span><span class="nx">gmail</span><span class="p">.</span><span class="nx">com</span>
+<a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="nx">git</span><span class="w"> </span><span class="nx">config</span><span class="w"> </span><span class="o">--</span><span class="nx">global</span><span class="w"> </span><span class="nx">user</span><span class="p">.</span><span class="nx">name</span><span class="w"> </span><span class="s">"Yuliya.Belskaya"</span>
+</code></pre></div>
+<p>Этими данными по умолчанию будут подписываться все сделанные коммиты.</p>
+<p>Можно задать отдельные имя пользователя и электронную почту для определённого репозитория. Для этого перейдите в локальный репозиторий и выполните команды <code>git config</code> без флага <code>--global</code>:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>git config user.email new-address@mail.com
+<a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a>git config user.name "Name"
+</code></pre></div>
+<h3 id="_3">Просмотр текущего состояния репозитория</h3>
+<p>Команда <code>git status</code> показывает текущую ветку и состояние файлов: какие изменения не добавлены в индекс, а какие уже готовы к коммиту.</p>
+<p>Проиндексированные файлы отображаются под заголовком <code>Changes to be committed</code>:</p>
+<div class="highlight"><span class="filename">Пример</span><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="nx">git</span><span class="w"> </span><span class="nx">status</span>
+<a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="nx">On</span><span class="w"> </span><span class="nx">branch</span><span class="w"> </span><span class="nx">git</span>
+<a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="nx">Changes</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">be</span><span class="w"> </span><span class="nx">committed</span><span class="p">:</span>
+<a href="#__codelineno-4-4" id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="w">  </span><span class="p">(</span><span class="nx">use</span><span class="w"> </span><span class="s">"git restore --staged &lt;file&gt;..."</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">unstage</span><span class="p">)</span>
+<a href="#__codelineno-4-5" id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="w">        </span><span class="nx">modified</span><span class="p">:</span><span class="w">   </span><span class="nx">docs</span><span class="o">/</span><span class="nx">tools</span><span class="o">/</span><span class="nx">git</span><span class="p">.</span><span class="nx">md</span>
+</code></pre></div>
+<p>Непроиндексированные файлы отображаются под заголовком <code>Changes not staged for commit</code>:</p>
+<div class="highlight"><span class="filename">Пример</span><pre><span></span><code><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="nx">git</span><span class="w"> </span><span class="nx">status</span>
+<a href="#__codelineno-5-2" id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="nx">On</span><span class="w"> </span><span class="nx">branch</span><span class="w"> </span><span class="nx">git</span>
+<a href="#__codelineno-5-3" id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="nx">Changes</span><span class="w"> </span><span class="nx">not</span><span class="w"> </span><span class="nx">staged</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nx">commit</span><span class="p">:</span>
+<a href="#__codelineno-5-4" id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="w">  </span><span class="p">(</span><span class="nx">use</span><span class="w"> </span><span class="s">"git add &lt;file&gt;..."</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">update</span><span class="w"> </span><span class="nx">what</span><span class="w"> </span><span class="nx">will</span><span class="w"> </span><span class="nx">be</span><span class="w"> </span><span class="nx">committed</span><span class="p">)</span>
+<a href="#__codelineno-5-5" id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="w">  </span><span class="p">(</span><span class="nx">use</span><span class="w"> </span><span class="s">"git restore &lt;file&gt;..."</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">discard</span><span class="w"> </span><span class="nx">changes</span><span class="w"> </span><span class="nx">in</span><span class="w"> </span><span class="nx">working</span><span class="w"> </span><span class="nx">directory</span><span class="p">)</span>
+<a href="#__codelineno-5-6" id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="w">        </span><span class="nx">modified</span><span class="p">:</span><span class="w">   </span><span class="nx">docs</span><span class="o">/</span><span class="nx">tools</span><span class="o">/</span><span class="nx">git</span><span class="p">.</span><span class="nx">md</span>
+<a href="#__codelineno-5-7" id="__codelineno-5-7" name="__codelineno-5-7"></a>
+<a href="#__codelineno-5-8" id="__codelineno-5-8" name="__codelineno-5-8"></a><span class="nx">no</span><span class="w"> </span><span class="nx">changes</span><span class="w"> </span><span class="nx">added</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">commit</span><span class="w"> </span><span class="p">(</span><span class="nx">use</span><span class="w"> </span><span class="s">"git add"</span><span class="w"> </span><span class="nx">and</span><span class="o">/</span><span class="nx">or</span><span class="w"> </span><span class="s">"git commit -a"</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="_4">Обновление локального репозитория</h3>
+<p>Для работы с изменениями из удалённого репозитория используются команды <code>git fetch</code> и <code>git pull</code>.</p>
+<p>Команда <code>git fetch</code> загружает изменения из удалённого репозитория, но не вливает их в локальные ветки. Файлы и состояние локального репозитория остаются без изменений. Команду <code>git fetch</code> можно использовать для безопасного просмотра обновлений удалённого репозитория, например, чтобы посмотреть новые ветки и проанализировать работу коллег.</p>
+<p>Команда <code>git pull</code> загружает изменения из удалённого репозитория и сразу вливает их в локальные ветки, синхронизируя локальный репозиторий с удалённым. Команда <code>git pull</code> используется, когда необходимо получить актуальную версию проекта.</p>
+<h3 id="_5">Переключение между ветками</h3>
+<p>Для переключения на другую ветку используйте команду:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a>git switch название-ветки 
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Примечание</p>
+<p>Команда <code>git checkout название-ветки</code> также работает, но считается устаревшей. Вместо неё рекомендуется использовать <code>git switch название-ветки</code>.</p>
+</div>
+<h3 id="_6">Создание новой ветки</h3>
+<p>Как правило новая ветка создаётся для выполнения очередной задачи по обновлению проекта, поэтому ветка откалывается от главной ветки репозитория (main или master):</p>
+<ol>
+<li>Переключитесь на главную ветку репозитория:
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a>git switch master
+</code></pre></div></li>
+<li>Заберите возможные обновления из удалённого репозитория:
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-8-1" id="__codelineno-8-1" name="__codelineno-8-1"></a>git pull
+</code></pre></div></li>
+<li>Создайте новую ветку. По умолчанию ветка откалывается от текущей ветки (в нашем случае от master-ветки):
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-9-1" id="__codelineno-9-1" name="__codelineno-9-1"></a>git branch new-feature
+</code></pre></div></li>
+<li>Переключитесь на новую ветку:
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-10-1" id="__codelineno-10-1" name="__codelineno-10-1"></a>git switch new-feature
+</code></pre></div></li>
+</ol>
+<h3 id="_7">Сохранение изменений</h3>
+<p>Внесённые вами в файлы изменения находятся в рабочей директории. Перед созданием коммита необходимо добавить эти изменения в индекс — промежуточное пространство с метаданными об изменениях:</p>
+<ol>
+<li>Убедитесь, что изменения есть в рабочей директории:
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-11-1" id="__codelineno-11-1" name="__codelineno-11-1"></a>git status
+</code></pre></div>
+Непроиндексированные файлы отображаются под заголовком <code>Changes not staged for commit</code>:
+<div class="highlight"><span class="filename">Пример</span><pre><span></span><code><a href="#__codelineno-12-1" id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="nx">git</span><span class="w"> </span><span class="nx">status</span>
+<a href="#__codelineno-12-2" id="__codelineno-12-2" name="__codelineno-12-2"></a><span class="nx">On</span><span class="w"> </span><span class="nx">branch</span><span class="w"> </span><span class="nx">git</span>
+<a href="#__codelineno-12-3" id="__codelineno-12-3" name="__codelineno-12-3"></a><span class="nx">Changes</span><span class="w"> </span><span class="nx">not</span><span class="w"> </span><span class="nx">staged</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nx">commit</span><span class="p">:</span>
+<a href="#__codelineno-12-4" id="__codelineno-12-4" name="__codelineno-12-4"></a><span class="w">  </span><span class="p">(</span><span class="nx">use</span><span class="w"> </span><span class="s">"git add &lt;file&gt;..."</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">update</span><span class="w"> </span><span class="nx">what</span><span class="w"> </span><span class="nx">will</span><span class="w"> </span><span class="nx">be</span><span class="w"> </span><span class="nx">committed</span><span class="p">)</span>
+<a href="#__codelineno-12-5" id="__codelineno-12-5" name="__codelineno-12-5"></a><span class="w">  </span><span class="p">(</span><span class="nx">use</span><span class="w"> </span><span class="s">"git restore &lt;file&gt;..."</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">discard</span><span class="w"> </span><span class="nx">changes</span><span class="w"> </span><span class="nx">in</span><span class="w"> </span><span class="nx">working</span><span class="w"> </span><span class="nx">directory</span><span class="p">)</span>
+<a href="#__codelineno-12-6" id="__codelineno-12-6" name="__codelineno-12-6"></a><span class="w">        </span><span class="nx">modified</span><span class="p">:</span><span class="w">   </span><span class="nx">docs</span><span class="o">/</span><span class="nx">tools</span><span class="o">/</span><span class="nx">git</span><span class="p">.</span><span class="nx">md</span>
+<a href="#__codelineno-12-7" id="__codelineno-12-7" name="__codelineno-12-7"></a>
+<a href="#__codelineno-12-8" id="__codelineno-12-8" name="__codelineno-12-8"></a><span class="nx">no</span><span class="w"> </span><span class="nx">changes</span><span class="w"> </span><span class="nx">added</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">commit</span><span class="w"> </span><span class="p">(</span><span class="nx">use</span><span class="w"> </span><span class="s">"git add"</span><span class="w"> </span><span class="nx">and</span><span class="o">/</span><span class="nx">or</span><span class="w"> </span><span class="s">"git commit -a"</span><span class="p">)</span>
+</code></pre></div></li>
+<li>Добавьте изменения в индекс. Для этого выполните команду <code>git add</code>:</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Примечание</p>
+<p>Чтобы добавить один файл в индекс, укажите в команде git add полное название файла:
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-13-1" id="__codelineno-13-1" name="__codelineno-13-1"></a>git add tools/git.md
+</code></pre></div>
+Чтобы добавить в индекс все изменённые файлы, вместо названия файла в команде <code>git add</code> поставьте точку:
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-14-1" id="__codelineno-14-1" name="__codelineno-14-1"></a>git add .
+</code></pre></div><p></p>
+</div>
+<p>После <code>git add .</code> команда <code>git status</code> покажет проиндексированные изменения под заголовком <code>Changes to be commited</code>:
+</p><div class="highlight"><span class="filename">Пример</span><pre><span></span><code><a href="#__codelineno-15-1" id="__codelineno-15-1" name="__codelineno-15-1"></a><span class="nx">git</span><span class="w"> </span><span class="nx">add</span><span class="w"> </span><span class="p">.</span>
+<a href="#__codelineno-15-2" id="__codelineno-15-2" name="__codelineno-15-2"></a><span class="nx">git</span><span class="w"> </span><span class="nx">status</span>
+<a href="#__codelineno-15-3" id="__codelineno-15-3" name="__codelineno-15-3"></a><span class="nx">On</span><span class="w"> </span><span class="nx">branch</span><span class="w"> </span><span class="nx">git</span>
+<a href="#__codelineno-15-4" id="__codelineno-15-4" name="__codelineno-15-4"></a><span class="nx">Changes</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">be</span><span class="w"> </span><span class="nx">committed</span><span class="p">:</span>
+<a href="#__codelineno-15-5" id="__codelineno-15-5" name="__codelineno-15-5"></a><span class="w">  </span><span class="p">(</span><span class="nx">use</span><span class="w"> </span><span class="s">"git restore --staged &lt;file&gt;..."</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">unstage</span><span class="p">)</span>
+<a href="#__codelineno-15-6" id="__codelineno-15-6" name="__codelineno-15-6"></a><span class="w">        </span><span class="nx">modified</span><span class="p">:</span><span class="w">   </span><span class="nx">docs</span><span class="o">/</span><span class="nx">tools</span><span class="o">/</span><span class="nx">git</span><span class="p">.</span><span class="nx">md</span><span class="w">     </span>
+</code></pre></div>
+3. Создайте коммит с помощью команды <code>git commit -m "Описание коммита"</code>:
+<div class="highlight"><span class="filename">Пример</span><pre><span></span><code><a href="#__codelineno-16-1" id="__codelineno-16-1" name="__codelineno-16-1"></a><span class="nx">git</span><span class="w"> </span><span class="nx">commit</span><span class="w"> </span><span class="o">-</span><span class="nx">m</span><span class="w"> </span><span class="s">"Добавил статью с git-командами"</span>
+</code></pre></div><p></p>
+<h3 id="_8">Публикация новой ветки</h3>
+<p>Чтобы локальная ветка <code>git</code> стала доступна другим участникам проекта в удалённом репозитории, её необходимо опубликовать — создать удалённую версию и связать их.</p>
+<p>Для этого используйте команду <code>git push</code> с флагом <code>--set-upstream</code>:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-17-1" id="__codelineno-17-1" name="__codelineno-17-1"></a>git push --set-upstream origin git
+</code></pre></div>
+<p>После публикации в удалённом репозитории <code>origin</code> создаётся ветка <code>origin/git</code>, связанная с локальной веткой <code>git</code>. Теперь можно выполнять команды <code>git pull</code> и <code>git push</code> в ветке <code>git</code> — Git будет знать, из какой удалённой ветки забирать изменения при <code>git pull</code> и в какую удалённую ветку их отправлять при <code>git push</code>.</p>
+<h3 id="_9">Отправка изменений на сервер</h3>
+<p>Для отправки коммитов опубликованной ветки в удалённый репозиторий используйте команду <code>git push</code>.</p>
+<h3 id="_10">Слияние веток</h3>
+<p>Для слияния двух веток используйте команду <code>git merge</code>:</p>
+<ol>
+<li>Переключитесь на целевую ветку (целевая — ветка, в которую будут вливаться изменения):
+<div class="highlight"><span class="filename">Пример</span><pre><span></span><code><a href="#__codelineno-18-1" id="__codelineno-18-1" name="__codelineno-18-1"></a><span class="nx">git</span><span class="w"> </span><span class="k">switch</span><span class="w"> </span><span class="nx">base</span><span class="o">-</span><span class="nx">branch</span>
+</code></pre></div></li>
+<li>Выполните команду <code>git merge название-сливаемой-ветки</code>:
+<div class="highlight"><span class="filename">Пример</span><pre><span></span><code><a href="#__codelineno-19-1" id="__codelineno-19-1" name="__codelineno-19-1"></a><span class="nx">git</span><span class="w"> </span><span class="nx">merge</span><span class="w"> </span><span class="nx">compared</span><span class="o">-</span><span class="nx">branch</span>
+</code></pre></div></li>
+<li>Отправьте изменения целевой ветки в удалённый репозиторий с помощью команды <code>git push</code>.</li>
+</ol>
+<h3 id="_11">Просмотр истории изменений</h3>
+<p>Для просмотра истории коммитов выполните команду <code>git log</code>. В ответе отобразится список коммитов:</p>
+<div class="highlight"><span class="filename">Пример</span><pre><span></span><code><a href="#__codelineno-20-1" id="__codelineno-20-1" name="__codelineno-20-1"></a><span class="nx">git</span><span class="w"> </span><span class="nx">log</span>
+<a href="#__codelineno-20-2" id="__codelineno-20-2" name="__codelineno-20-2"></a><span class="nx">commit</span><span class="w"> </span><span class="nx">a1449fc4f004c7f65ff81b1513b6553c4071b96c</span><span class="w"> </span><span class="p">(</span><span class="nx">HEAD</span><span class="w"> </span><span class="o">-</span><span class="p">&gt;</span><span class="w"> </span><span class="nx">git</span><span class="p">)</span>
+<a href="#__codelineno-20-3" id="__codelineno-20-3" name="__codelineno-20-3"></a><span class="nx">Author</span><span class="p">:</span><span class="w"> </span><span class="nx">yulyashabel5</span><span class="o">-</span><span class="nx">tech</span><span class="w"> </span><span class="p">&lt;</span><span class="nx">yulyashabel5</span><span class="err">@</span><span class="nx">gmail</span><span class="p">.</span><span class="nx">com</span><span class="p">&gt;</span>
+<a href="#__codelineno-20-4" id="__codelineno-20-4" name="__codelineno-20-4"></a><span class="nx">Date</span><span class="p">:</span><span class="w">   </span><span class="nx">Wed</span><span class="w"> </span><span class="nx">Jul</span><span class="w"> </span><span class="mi">8</span><span class="w"> </span><span class="mi">19</span><span class="p">:</span><span class="mi">28</span><span class="p">:</span><span class="mi">51</span><span class="w"> </span><span class="mi">2026</span><span class="w"> </span><span class="o">+</span><span class="mo">0300</span>
+<a href="#__codelineno-20-5" id="__codelineno-20-5" name="__codelineno-20-5"></a>
+<a href="#__codelineno-20-6" id="__codelineno-20-6" name="__codelineno-20-6"></a><span class="w">    </span><span class="nx">Добавила</span><span class="w"> </span><span class="nx">описание</span><span class="w"> </span><span class="nx">команд</span><span class="w"> </span><span class="nx">Git</span>
+</code></pre></div>
+<p>Для просмотра следующих пунктов списка нажмите клавишу <strong>Enter</strong>. Для выхода из команды <code>git log</code> нажмите клавишу <strong>q</strong>.</p>
+<p>Для просмотра полной информации о конкретном коммите используйте команду <code>git show</code> с указанием хэша коммита:</p>
+<div class="highlight"><span class="filename">Пример</span><pre><span></span><code><a href="#__codelineno-21-1" id="__codelineno-21-1" name="__codelineno-21-1"></a><span class="nx">git</span><span class="w"> </span><span class="nx">show</span><span class="w"> </span><span class="nx">a1449fc4f004c7f65ff81b1513b6553c4071b96c</span><span class="w"> </span>
+<a href="#__codelineno-21-2" id="__codelineno-21-2" name="__codelineno-21-2"></a><span class="nx">Author</span><span class="p">:</span><span class="w"> </span><span class="nx">yulyashabel5</span><span class="o">-</span><span class="nx">tech</span><span class="w"> </span><span class="p">&lt;</span><span class="nx">yulyashabel5</span><span class="err">@</span><span class="nx">gmail</span><span class="p">.</span><span class="nx">com</span><span class="p">&gt;</span>
+<a href="#__codelineno-21-3" id="__codelineno-21-3" name="__codelineno-21-3"></a><span class="nx">Date</span><span class="p">:</span><span class="w">   </span><span class="nx">Wed</span><span class="w"> </span><span class="nx">Jul</span><span class="w"> </span><span class="mi">8</span><span class="w"> </span><span class="mi">19</span><span class="p">:</span><span class="mi">28</span><span class="p">:</span><span class="mi">51</span><span class="w"> </span><span class="mi">2026</span><span class="w"> </span><span class="o">+</span><span class="mo">0300</span>
+<a href="#__codelineno-21-4" id="__codelineno-21-4" name="__codelineno-21-4"></a>
+<a href="#__codelineno-21-5" id="__codelineno-21-5" name="__codelineno-21-5"></a><span class="w">    </span><span class="nx">Добавила</span><span class="w"> </span><span class="nx">описание</span><span class="w"> </span><span class="nx">команд</span><span class="w"> </span><span class="nx">Git</span>
+<a href="#__codelineno-21-6" id="__codelineno-21-6" name="__codelineno-21-6"></a>
+<a href="#__codelineno-21-7" id="__codelineno-21-7" name="__codelineno-21-7"></a><span class="nx">diff</span><span class="w"> </span><span class="o">--</span><span class="nx">git</span><span class="w"> </span><span class="nx">a</span><span class="o">/</span><span class="nx">docs</span><span class="o">/</span><span class="nx">tools</span><span class="o">/</span><span class="nx">git</span><span class="p">.</span><span class="nx">md</span><span class="w"> </span><span class="nx">b</span><span class="o">/</span><span class="nx">docs</span><span class="o">/</span><span class="nx">tools</span><span class="o">/</span><span class="nx">git</span><span class="p">.</span><span class="nx">md</span>
+</code></pre></div>
+<details class="quote">
+<summary>Что такое хэш коммита?</summary>
+<p>Хэш коммита — это его уникальный идентификатор, состоящий из сорока символов (или его укороченная версия из семи символов). Хэш коммита можно посмотреть в выводе команды <code>git log</code>:
+</p><div class="highlight"><span class="filename">Пример</span><pre><span></span><code><a href="#__codelineno-22-1" id="__codelineno-22-1" name="__codelineno-22-1"></a><span class="nx">git</span><span class="w"> </span><span class="nx">log</span>
+<a href="#__codelineno-22-2" id="__codelineno-22-2" name="__codelineno-22-2"></a><span class="nx">commit</span><span class="w"> </span><span class="nx">a1449fc4f004c7f65ff81b1513b6553c4071b96c</span><span class="w"> </span><span class="p">(</span><span class="nx">HEAD</span><span class="w"> </span><span class="o">-</span><span class="p">&gt;</span><span class="w"> </span><span class="nx">git</span><span class="p">)</span>
+<a href="#__codelineno-22-3" id="__codelineno-22-3" name="__codelineno-22-3"></a><span class="nx">Author</span><span class="p">:</span><span class="w"> </span><span class="nx">yulyashabel5</span><span class="o">-</span><span class="nx">tech</span><span class="w"> </span><span class="p">&lt;</span><span class="nx">yulyashabel5</span><span class="err">@</span><span class="nx">gmail</span><span class="p">.</span><span class="nx">com</span><span class="p">&gt;</span>
+<a href="#__codelineno-22-4" id="__codelineno-22-4" name="__codelineno-22-4"></a><span class="nx">Date</span><span class="p">:</span><span class="w">   </span><span class="nx">Wed</span><span class="w"> </span><span class="nx">Jul</span><span class="w"> </span><span class="mi">8</span><span class="w"> </span><span class="mi">19</span><span class="p">:</span><span class="mi">28</span><span class="p">:</span><span class="mi">51</span><span class="w"> </span><span class="mi">2026</span><span class="w"> </span><span class="o">+</span><span class="mo">0300</span>
+</code></pre></div><p></p>
+</details>
+<p>Для просмотра последних изменений используйте команду <code>git diff</code>. Команда покажет разницу между текущим состоянием рабочей директории и последним коммитом:</p>
+<div class="highlight"><span class="filename">Пример</span><pre><span></span><code><a href="#__codelineno-23-1" id="__codelineno-23-1" name="__codelineno-23-1"></a><span class="nx">git</span><span class="w"> </span><span class="nx">diff</span>
+<a href="#__codelineno-23-2" id="__codelineno-23-2" name="__codelineno-23-2"></a><span class="nx">diff</span><span class="w"> </span><span class="o">--</span><span class="nx">git</span><span class="w"> </span><span class="nx">a</span><span class="o">/</span><span class="nx">docs</span><span class="o">/</span><span class="nx">tools</span><span class="o">/</span><span class="nx">git</span><span class="p">.</span><span class="nx">md</span><span class="w"> </span><span class="nx">b</span><span class="o">/</span><span class="nx">docs</span><span class="o">/</span><span class="nx">tools</span><span class="o">/</span><span class="nx">git</span><span class="p">.</span><span class="nx">md</span>
+<a href="#__codelineno-23-3" id="__codelineno-23-3" name="__codelineno-23-3"></a><span class="nx">index</span><span class="w"> </span><span class="mi">0</span><span class="nx">f38fc6</span><span class="p">..</span><span class="nx">c17fa51</span><span class="w"> </span><span class="mi">100644</span>
+<a href="#__codelineno-23-4" id="__codelineno-23-4" name="__codelineno-23-4"></a><span class="o">---</span><span class="w"> </span><span class="nx">a</span><span class="o">/</span><span class="nx">docs</span><span class="o">/</span><span class="nx">tools</span><span class="o">/</span><span class="nx">git</span><span class="p">.</span><span class="nx">md</span>
+<a href="#__codelineno-23-5" id="__codelineno-23-5" name="__codelineno-23-5"></a><span class="o">+++</span><span class="w"> </span><span class="nx">b</span><span class="o">/</span><span class="nx">docs</span><span class="o">/</span><span class="nx">tools</span><span class="o">/</span><span class="nx">git</span><span class="p">.</span><span class="nx">md</span>
+<a href="#__codelineno-23-6" id="__codelineno-23-6" name="__codelineno-23-6"></a><span class="err">@@</span><span class="w"> </span><span class="o">-</span><span class="mi">193</span><span class="p">,</span><span class="mi">6</span><span class="w"> </span><span class="o">+</span><span class="mi">193</span><span class="p">,</span><span class="mi">132</span><span class="w"> </span><span class="err">@@</span>
+<a href="#__codelineno-23-7" id="__codelineno-23-7" name="__codelineno-23-7"></a>
+<a href="#__codelineno-23-8" id="__codelineno-23-8" name="__codelineno-23-8"></a><span class="w">     </span><span class="nx">git</span><span class="w"> </span><span class="nx">status</span>
+<a href="#__codelineno-23-9" id="__codelineno-23-9" name="__codelineno-23-9"></a><span class="w">     </span><span class="s">```</span>
+<a href="#__codelineno-23-10" id="__codelineno-23-10" name="__codelineno-23-10"></a>
+<a href="#__codelineno-23-11" id="__codelineno-23-11" name="__codelineno-23-11"></a><span class="s">-    Непроиндексированные файлы выделены красным цветом:</span>
+<a href="#__codelineno-23-12" id="__codelineno-23-12" name="__codelineno-23-12"></a><span class="s">+    Непроиндексированные файлы указаны под заголовком `</span><span class="nx">Changes</span><span class="w"> </span><span class="nx">not</span><span class="w"> </span><span class="nx">staged</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nx">commit</span><span class="err">`</span><span class="p">:</span>
+</code></pre></div>
+<h3 id="_12">Отмена изменений</h3>
+<p>Для отмены непроиндексированных изменений в файле используйте команду <code>git restore название-файла</code>. Изменения в файле будут безвозвратно удалены.</p>
+<p>Для отмены проиндексированных изменений в файле используйте команду <code>git restore --staged название-файла</code>. Изменения в файле сохранятся, но будут удалены из индекса.</p>
+<p>Для отмены локального коммита (который ещё не отправили в удалённый репозиторий) используйте команду <code>git reset</code>:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-24-1" id="__codelineno-24-1" name="__codelineno-24-1"></a>git reset HEAD~1
+</code></pre></div>
+<p>В результате выполнения этой команды указатель HEAD переместится на предыдущий коммит, а изменения из текущего коммита окажутся в рабочей директории.</p>
+<div class="admonition info">
+<p class="admonition-title">Важно!</p>
+<p>Не используйте команду <code>git reset</code> для коммитов, которые вы уже отправили на удалённый сервер.</p>
+</div>
+<p>Для отмены коммита, отправленного в удалённый репозиторий, используйте команду <code>git revert хэш-коммита</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Примечание</p>
+<p>Команда <code>git revert</code> не удаляет коммит, а отменяет внесённые в нём изменения и фиксирует это новым коммитом.</p>
+</div>
+<h3 id="_13">Просмотр веток</h3>
+<p>Для просмотра всех веток локального репозитория используйте команду <code>git branch</code>.</p>
+<p>Для просмотра всех веток удалённого репозитория используйте команду <code>git branch с флагом -r</code>:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-25-1" id="__codelineno-25-1" name="__codelineno-25-1"></a>git branch -r
+</code></pre></div>
+<h3 id="_14">Удаление веток</h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"/><input id="__tabbed_1_2" name="__tabbed_1" type="radio"/><div class="tabbed-labels"><label for="__tabbed_1_1">Локальная ветка</label><label for="__tabbed_1_2">Удалённая ветка</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Для удаления локальной ветки:</p>
+<ol>
+<li>Переключитесь на другую ветку.</li>
+<li>Выполните команду:
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-26-1" id="__codelineno-26-1" name="__codelineno-26-1"></a>git branch --delete название-ветки
+</code></pre></div></li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">Внимание!</p>
+<p>Команда <code>git branch --delete</code> удаляет только локальную версию ветки и не влияет на опубликованную в удалённом репозитории ветку, которую нужно удалить отдельно.</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>Для удаления удалённой ветки выполните команду:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-27-1" id="__codelineno-27-1" name="__codelineno-27-1"></a>git push origin --delete название-ветки
+</code></pre></div>
+</div>
+</div>
+</div>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  К началу
+</button>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", null, "navigation.indexes", "navigation.tabs", "navigation.tabs.sticky", "navigation.expand", null, "navigation.instant", "navigation.top", "navigation.tags", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+<script src="../../javascripts/collapsible-toc.js"></script>
+<script src="../../assets/mkdocs_puml/puml.js"></script>
+<script src="https://unpkg.com/@panzoom/panzoom@4.5.1/dist/panzoom.min.js"></script>
+<script src="../../assets/mkdocs_puml/interaction.js"></script>
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script><script>document$.subscribe(() => {
+            const dark_scheme_name = "slate"
+            
+            window.scheme = document.body.getAttribute("data-md-color-scheme")
+            const options = {
+                attributeFilter: ['data-md-color-scheme'],
+            };
+            function color_scheme_callback(mutations) {
+                for (let mutation of mutations) {
+                    if (mutation.attributeName === "data-md-color-scheme") {
+                        scheme = document.body.getAttribute("data-md-color-scheme")
+                        var iframe_list = document.getElementsByClassName("redoc-iframe")
+                        for(var i = 0; i < iframe_list.length; i++) {
+                            var ele = iframe_list.item(i);
+                            if (ele) {
+                                if (scheme === dark_scheme_name) {
+                                    ele.contentWindow.enable_dark_mode();
+                                } else {
+                                    ele.contentWindow.disable_dark_mode();
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            observer = new MutationObserver(color_scheme_callback);
+            observer.observe(document.body, options);
+            })</script></body></html>
