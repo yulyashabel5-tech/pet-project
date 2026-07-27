@@ -5,7 +5,7 @@ tags:
   - manual
 ---
 
---8<-- "docs/includes/abbreviations.md"
+--8<-- "includes/abbreviations.md"
 
 # MkDocs
 
@@ -35,7 +35,7 @@ pip install mkdocs-material
 ```
 git init
 ```
-В результате в папке появится каталог `.git` — база данных локального репозитория.
+В результате в папке появится каталог `.git`{: title="база данных локального репозитория"}.
 3. Создайте новый проект MkDocs, выполнив команду:
 ```
 mkdocs new .
@@ -908,7 +908,9 @@ markdown_extensions: # Расширения markdown
 
 ### Использование ресурсного файла
 
-Для хранения переиспользуемых фрагментов можно создать отдельный ресурсный файл:
+Для хранения переиспользуемых фрагментов можно создать отдельный ресурсный файл.
+
+#### Создание ресурсного файла
 
 1. Откройте рабочую директорию проекта. 
 
@@ -927,3 +929,46 @@ markdown_extensions: # Расширения markdown
 <div style="padding-left:28px;">
   <pre style="background:#f7ecec; padding:15px; border-radius:5px; font-family:monospace; overflow-x:auto; border:none; margin:0;"><code style="color:#5c5b5b; display:block;">--8&lt;-- "source:название-фрагмента"</code></pre>
 </div>
+
+#### Создание списка аббревиатур
+
+Для создания единого списка аббревиатур используйте расширение `abbr` в сочетании с `pymdownx.snippets`.
+
+1. Подключите расширения в `mkdocs.yml`{: title="конфигурационный файл проекта"}:
+    ```go title="mkdocs.yml"
+    markdown_extensions: # Расширения markdown
+      - attr_list # Использование html-атрибутов и CSS в элементах markdown
+      - abbr # Поддержка всплывающих подсказок
+      - pymdownx.snippets
+    ```    
+
+2. Создайте файл глоссария (например, `includes/abbreviations.md`):    
+    ```
+    pet-project
+    ├─ .git
+    ├─ docs
+    ├─ includes/
+    │ └─ abbreviations.md
+    └─ mkdocs.yml
+    ```
+
+3. Добавьте в файл аббревиатуры с расшифровкой:
+    ```go title="Пример"
+    *[SVG]: Scalable Vector Graphics
+    *[MD]: Markdown
+    *[pip]: Python Installs Packages
+    *[HTML]: HyperText Markup Language
+    ```
+
+4. Добавьте фрагмент с разметкой на страницу: 
+<div style="padding-left:28px;"> 
+  <pre style="background:#f7ecec; padding:15px; border-radius:5px; font-family:monospace; overflow-x:auto; border:none; margin:0;"><code style="color:#5c5b5b; display:block;">--8<-- "includes/abbreviations.md"<br><br># Заголовок</code></pre> 
+</div>
+
+При наведении на аббревиатуру появится всплывающая подсказка с расшифровкой.  
+
+!!! note "Примечание"
+    Файл с аббревиатурами рекомендуется хранить **вне** папки `docs` (например, в папке `includes`), чтобы MkDocs не создавал из него отдельную страницу.  
+
+!!! warning "Важно!"
+    Формат `*[]:` работает только для аббревиатур без пробелов и специальных символов. Для сложных терминов используйте HTML-тег `<abbr>` или всплывающие подсказки через `title`.
