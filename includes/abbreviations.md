@@ -1,5 +1,5 @@
 *[SVG]: Scalable Vector Graphics
-*[MD]: Markdown
+*[md]: Markdown
 *[pip]: Python Installs Packages
 *[HTML]: HyperText Markup Language
 *[CSS]: Cascading Style Sheets

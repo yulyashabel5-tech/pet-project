@@ -60,6 +60,7 @@ nav: # Структура сайта
   - MkDocs: tools/mkdocs.md
   - Git: tools/git.md
   - PlantUML: tools/plantuml.md
+  - Mermaid: tools/mermaid.md
 - Инструкции:
   - Смена аватарки в Telegram: instructions/page1.md
 - Примеры документации: 
@@ -75,6 +76,7 @@ extra_css:
 
 extra_javascript:
   - javascripts/collapsible-toc.js
+  - https://cdn.jsdelivr.net/npm/mermaid@11.16.0/dist/mermaid.min.js
 
 markdown_extensions: # Расширения markdown
   - admonition # Поддержка информационных панелей (сообщений типа «Внимание», «Совет», «Примечание», etc.)
@@ -88,7 +90,11 @@ markdown_extensions: # Расширения markdown
   - pymdownx.details # Использование спойлеров (катов)
   - pymdownx.highlight: # Подсветка синтаксиса в блоках кода
       anchor_linenums: true
-  - pymdownx.superfences # Поддержка вложенных блоков кода
+  - pymdownx.superfences: # Поддержка вложенных блоков кода   
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid  
   - pymdownx.snippets
   - pymdownx.tabbed
 
@@ -104,10 +110,12 @@ plugins:
       - git
       - api
       - mkdocs
+      - mermaid
       tags_file: tags.md  # Указывает файл для вывода всех тегов
       tags_url: /tags/ # Ссылка на страницу, куда ведёт клик по тегу
   - glightbox
   - swagger-ui-tag
   - redoc-tag
+  - mermaid2
   - plantuml:
       puml_url: https://www.plantuml.com/plantuml/

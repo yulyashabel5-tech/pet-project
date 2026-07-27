@@ -22,4 +22,5 @@ jobs:
       - run: pip install mkdocs-swagger-ui-tag # шаг для установки плагина mkdocs-swagger-ui-tag
       - run: pip install mkdocs-redoc-tag # шаг для установки плагина mkdocs-redoc-tag
       - run: pip install mkdocs_puml # шаг для установки плагина mkdocs_puml    
+      - run: pip install mkdocs-mermaid2-pluginmermaid2
       - run: mkdocs gh-deploy --force
