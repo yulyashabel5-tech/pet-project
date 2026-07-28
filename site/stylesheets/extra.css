@@ -1,0 +1,162 @@
+/* Настройки светлой схемы */
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #800020; /*Основной цвет*/
+  --md-accent-fg-color: #490113; /*Акцентный цвет*/
+  --md-typeset-a-color: #7e0422; /*Цвет ссылок*/
+  --md-default-bg-color: #fafafabb; /*Фоновый цвет*/
+  --md-default-fg-color: #353535; /*Основной цвет текста (абзацы, списки, подзаголовки, nav и toc)*/
+  --md-code-bg-color: #f7ecec; /*Цвет фона блока кода*/
+  --md-code-fg-color: #5c5b5b; /*Цвет текста в блоке кода*/
+  --md-default-fg-color--light: #808289; /*Цвет h1 и заголовков блоков toc и nav*/
+  --md-footer-bg-color: #800020; /*Цвет футера*/
+}
+
+/* Настройки тёмной схемы */
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #800020; /*Основной цвет*/
+  --md-accent-fg-color: #ffffff; /*Акцентный цвет*/
+  --md-typeset-a-color: #cf0000; /*Цвет ссылок*/
+  --md-default-bg-color: #1E2129; /*Фоновый цвет*/
+  --md-default-fg-color: #acaeb4; /*Основной цвет текста (абзацы, списки, подзаголовки, nav и toc)*/
+  --md-code-bg-color: #272A35; /*Цвет фона блока кода*/
+  --md-code-fg-color: #9B9EA8; /*Цвет текста в блоке кода*/
+  --md-default-fg-color--light: #808289; /*Цвет h1 и заголовков блоков toc и nav*/
+  --md-footer-bg-color: #800020; /*Цвет футера*/
+}
+
+/*Параметры текста статей*/
+.md-typeset {
+    font-family: 'Roboto Mono';
+    font-weight: 400;
+    font-size: 16px;
+}
+/*Параметры текста nav и toc*/
+.md-nav {
+    font-family: 'Roboto Mono';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.md-content h1, .md-content h2, .md-content h3, .md-content h4 {
+    font-family: 'Roboto Mono';
+    font-weight: 600;
+}
+
+.md-content h1 {
+    font-size: 30px;
+}
+
+.md-content h2 {
+    font-size: 24px;
+}
+
+.md-content h3 {
+    font-size: 21px;
+}
+
+.md-content h4 {
+    font-size: 18px;
+}
+
+
+/* Цвет заголовков для светлой темы (default) */
+[data-md-color-scheme="default"] h1,
+[data-md-color-scheme="default"] h2,
+[data-md-color-scheme="default"] h3,
+[data-md-color-scheme="default"] h4,
+[data-md-color-scheme="default"] h5,
+[data-md-color-scheme="default"] h6 {
+  color: #4b5563;
+}
+
+/* Цвет заголовков для тёмной темы (slate) */
+[data-md-color-scheme="slate"] h1,
+[data-md-color-scheme="slate"] h2,
+[data-md-color-scheme="slate"] h3,
+[data-md-color-scheme="slate"] h4,
+[data-md-color-scheme="slate"] h5,
+[data-md-color-scheme="slate"] h6 {
+  color: #808289;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); /* тень для глубины */
+}
+
+/* Стиль для всех таблиц */
+table {
+    background-color: #f7ecec !important;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #d0c8c8;
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Заголовки таблиц */
+table th {
+    background-color: #e8dcdc !important;
+    padding: 10px 16px;
+    text-align: center;
+    font-weight: 700;
+    color: #333;
+    border-bottom: 2px solid #d0c8c8;
+}
+
+/* Ячейки таблиц */
+table td {
+    padding: 10px 16px;
+    text-align: center;
+    color: #5c5b5b;
+    border-bottom: 1px solid #d0c8c8;
+}
+
+/* Убираем нижнюю границу у последней строки */
+table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Второй уровень нумерации */
+.md-typeset ol ol { 
+  list-style-type: lower-alpha; 
+}
+
+/* Сворачиваемое оглавление (правая панель) */
+
+/* Кнопка-переключатель */
+.toc-toggle {
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 0.3rem;
+  opacity: 0.7;
+  user-select: none;
+}
+
+/* Треугольник в свёрнутом состоянии (вправо) */
+.toc-toggle::after {
+  content: "▸";
+  display: inline-block;
+  font-size: 1.1rem;           /* Увеличенный размер */
+  font-weight: bold;
+  transition: transform 0.2s ease;
+  color: var(--md-default-fg-color--lighter);
+  line-height: 1;
+}
+
+/* Треугольник в развёрнутом состоянии (вниз) */
+.md-nav__item--nested:not(.toc-collapsed) > .md-nav__link .toc-toggle::after {
+  transform: rotate(90deg);
+  color: var(--md-primary-fg-color);
+}
+
+/* Скрываем вложенные пункты у свёрнутого раздела */
+.toc-collapsed > .md-nav {
+  display: none !important;
+}
+
+/* Ховер-эффект */
+.toc-toggle:hover::after {
+  opacity: 1;
+  color: var(--md-accent-fg-color);
+}

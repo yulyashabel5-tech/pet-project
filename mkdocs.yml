@@ -112,7 +112,6 @@ plugins:
       - mkdocs
       - mermaid
       tags_file: tags.md  # Указывает файл для вывода всех тегов
-      tags_url: /tags/ # Ссылка на страницу, куда ведёт клик по тегу
   - glightbox
   - swagger-ui-tag
   - redoc-tag
