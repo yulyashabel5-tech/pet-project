@@ -874,7 +874,7 @@ gitGraph
     ```mermaid title="Код Mermaid"
     ```mermaid
     gitGraph
-        commit id: "Создала проекта"
+        commit id: "Создала проект"
         commit id: "Добавила плагины"
     
         branch ci-cd
@@ -904,7 +904,7 @@ gitGraph
  
     ```mermaid
     gitGraph
-        commit id: "Создала проекта"
+        commit id: "Создала проект"
         commit id: "Добавила плагины"
     
         branch ci-cd
