@@ -63,10 +63,18 @@ nav: # Структура сайта
   - Mermaid: tools/mermaid.md
 - Инструкции:
   - Смена аватарки в Telegram: instructions/page1.md
-- Примеры документации: 
-  - Сценарий «Редактирование заметки»: examples/page2.md
-  - API Specification Swagger: api/swagger-api.md
-  - API Specification Redoc: api/redoc-api.md
+- Примеры документации:
+  - API документация:
+      - Обзор: examples/api_docs/overview.md
+      - Аутентификация: examples/api_docs/authentication.md
+      - Быстрый старт: examples/api_docs/quickstart.md
+      - Справочник API: api/swagger_users.md
+  - Приложение «Нотсапп»: 
+    - Спецификация: examples/notesapp.md
+    - Сценарий «Создание заметки»: examples/create_note.md
+    - Сценарий «Редактирование заметки»: examples/page2.md
+    - API Specification Swagger: api/swagger-api.md
+    - API Specification Redoc: api/redoc-api.md
 - FAQ:
   - Не активна кнопка Уравнение: FAQ/page3.md
   - Нумерация таблиц и рисунков с заданного номера: FAQ/page4.md
